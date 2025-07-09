@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2150542A-5799-437B-AB8C-D37433F60856}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>BookCraft_Group20.My.MyApplication</StartupObject>
+    <RootNamespace>BookCraft_Group20</RootNamespace>
+    <AssemblyName>BookCraft_Group20</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>BookCraft_Group20.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>BookCraft_Group20.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BookCraft_DataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookCraft_DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cart.Designer.vb">
+      <DependentUpon>Cart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cart.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabaseHelper.vb" />
+    <Compile Include="EbookMarketplace.Designer.vb">
+      <DependentUpon>EbookMarketplace.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EbookMarketplace.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarketPlace.Designer.vb">
+      <DependentUpon>MarketPlace.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MarketPlace.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentForm.Designer.vb">
+      <DependentUpon>PaymentForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhysicalOrEbook.Designer.vb">
+      <DependentUpon>PhysicalOrEbook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PhysicalOrEbook.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReadEbook.Designer.vb">
+      <DependentUpon>ReadEbook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReadEbook.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReadEbook2.Designer.vb">
+      <DependentUpon>ReadEbook2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReadEbook2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales Catalogue.Designer.vb">
+      <DependentUpon>Sales Catalogue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sales Catalogue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp.Designer.vb">
+      <DependentUpon>SignUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Log In.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Log In.Designer.vb">
+      <DependentUpon>Log In.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Transaction Place.Designer.vb">
+      <DependentUpon>Transaction Place.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction Place.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UploadEbook.Designer.vb">
+      <DependentUpon>UploadEbook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UploadEbook.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserProfile.Designer.vb">
+      <DependentUpon>UserProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Cart.resx">
+      <DependentUpon>Cart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EbookMarketplace.resx">
+      <DependentUpon>EbookMarketplace.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Log In.resx">
+      <DependentUpon>Log In.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarketPlace.resx">
+      <DependentUpon>MarketPlace.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentForm.resx">
+      <DependentUpon>PaymentForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhysicalOrEbook.resx">
+      <DependentUpon>PhysicalOrEbook.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReadEbook.resx">
+      <DependentUpon>ReadEbook.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReadEbook2.resx">
+      <DependentUpon>ReadEbook2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales Catalogue.resx">
+      <DependentUpon>Sales Catalogue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction Place.resx">
+      <DependentUpon>Transaction Place.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UploadEbook.resx">
+      <DependentUpon>UploadEbook.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserProfile.resx">
+      <DependentUpon>UserProfile.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BookCraft_DataSet.xsc">
+      <DependentUpon>BookCraft_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BookCraft_DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BookCraft_DataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BookCraft_DataSet.xss">
+      <DependentUpon>BookCraft_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BookCraft_Group20_Database.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="My Project\Resources\75519 icon size 200.png" />
+    <Content Include="My Project\Resources\75519_icon_size_15-removebg-preview.png" />
+    <Content Include="My Project\Resources\75519_icon_size_50-removebg-preview.png" />
+    <Content Include="My Project\Resources\Adobe Express - file.png" />
+    <Content Include="My Project\Resources\book icon resize.png" />
+    <Content Include="My Project\Resources\Card Icon.png" />
+    <Content Include="My Project\Resources\CImb Icon.png" />
+    <Content Include="My Project\Resources\E-book Icon.jpg" />
+    <Content Include="My Project\Resources\Ebook Icon Resize.png" />
+    <Content Include="My Project\Resources\Maybank Icon.jpg" />
+    <Content Include="My Project\Resources\Maybank Icon1.jpg" />
+    <Content Include="My Project\Resources\Maybank Icon2.jpg" />
+    <Content Include="My Project\Resources\pfp icon 2 uodated.png" />
+    <Content Include="My Project\Resources\pfp icon 2.png" />
+    <Content Include="My Project\Resources\pfp icon 21.png" />
+    <Content Include="My Project\Resources\Pfp Icon.jpg" />
+    <Content Include="My Project\Resources\Pfp Icon1.jpg" />
+    <Content Include="My Project\Resources\Qr Payment.png" />
+    <Content Include="My Project\Resources\right small-Photoroom.png" />
+    <Content Include="My Project\Resources\right small.png" />
+    <Content Include="My Project\Resources\right.png" />
+    <Content Include="My Project\Resources\shopping-cart-icon-illustration-free-vector resize-Photoroom.png" />
+    <Content Include="My Project\Resources\shopping-cart-icon-illustration-free-vector resize.jpg" />
+    <Content Include="My Project\Resources\TNG ICON.png" />
+    <Content Include="My Project\Resources\TNG ICON1.png" />
+    <Content Include="My Project\Resources\WhatsApp Image 2025-05-21 at 18.24.37_f09943ca.jpg" />
+    <Content Include="My Project\Resources\x exit icon resize.jpg" />
+    <Content Include="My Project\Resources\x_icon_150997 resize.jpg" />
+    <Content Include="My Project\Resources\x_icon_150997 resize1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
