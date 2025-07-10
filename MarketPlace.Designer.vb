@@ -32,9 +32,24 @@ Partial Class MarketPlace
         Me.btnEbook = New System.Windows.Forms.Button()
         Me.btnNextPage = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
+        Me.Panel3.SuspendLayout()
+        Me.Panel4.SuspendLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -131,6 +146,88 @@ Partial Class MarketPlace
         Me.Button1.TabIndex = 36
         Me.Button1.Text = "<"
         Me.Button1.UseVisualStyleBackColor = False
+        Me.Button1.Visible = False
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.Panel2.Controls.Add(Me.TextBox2)
+        Me.Panel2.Controls.Add(Me.PictureBox3)
+        Me.Panel2.Location = New System.Drawing.Point(93, 168)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(378, 455)
+        Me.Panel2.TabIndex = 37
+        '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.Panel3.Controls.Add(Me.TextBox4)
+        Me.Panel3.Controls.Add(Me.PictureBox4)
+        Me.Panel3.Location = New System.Drawing.Point(877, 168)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(378, 455)
+        Me.Panel3.TabIndex = 38
+        '
+        'Panel4
+        '
+        Me.Panel4.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.Panel4.Controls.Add(Me.TextBox3)
+        Me.Panel4.Controls.Add(Me.PictureBox5)
+        Me.Panel4.Location = New System.Drawing.Point(485, 168)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(378, 455)
+        Me.Panel4.TabIndex = 38
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Location = New System.Drawing.Point(71, 9)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(231, 232)
+        Me.PictureBox3.TabIndex = 39
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Location = New System.Drawing.Point(72, 9)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(231, 232)
+        Me.PictureBox4.TabIndex = 40
+        Me.PictureBox4.TabStop = False
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.Location = New System.Drawing.Point(76, 9)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(231, 232)
+        Me.PictureBox5.TabIndex = 41
+        Me.PictureBox5.TabStop = False
+        '
+        'TextBox2
+        '
+        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox2.Location = New System.Drawing.Point(16, 247)
+        Me.TextBox2.Multiline = True
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(343, 53)
+        Me.TextBox2.TabIndex = 39
+        '
+        'TextBox3
+        '
+        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox3.Location = New System.Drawing.Point(17, 247)
+        Me.TextBox3.Multiline = True
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(343, 53)
+        Me.TextBox3.TabIndex = 40
+        '
+        'TextBox4
+        '
+        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox4.Location = New System.Drawing.Point(15, 247)
+        Me.TextBox4.Multiline = True
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(343, 53)
+        Me.TextBox4.TabIndex = 42
         '
         'MarketPlace
         '
@@ -138,6 +235,9 @@ Partial Class MarketPlace
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(188, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1348, 721)
+        Me.Controls.Add(Me.Panel3)
+        Me.Controls.Add(Me.Panel4)
+        Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnNextPage)
         Me.Controls.Add(Me.btnProfile)
@@ -150,6 +250,15 @@ Partial Class MarketPlace
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
+        Me.Panel4.ResumeLayout(False)
+        Me.Panel4.PerformLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -163,4 +272,13 @@ Partial Class MarketPlace
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents btnNextPage As Button
     Friend WithEvents Button1 As Button
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Panel4 As Panel
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents PictureBox5 As PictureBox
+    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents TextBox3 As TextBox
 End Class

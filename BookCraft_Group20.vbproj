@@ -16,7 +16,7 @@
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <DefineDebug>true</DefineDebug>
@@ -73,6 +73,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddPhysicalBook.Designer.vb">
+      <DependentUpon>AddPhysicalBook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddPhysicalBook.vb" />
     <Compile Include="BookCraft_DataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -167,6 +171,12 @@
     <Compile Include="UploadEbook.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="UserLibrary.Designer.vb">
+      <DependentUpon>UserLibrary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserLibrary.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="UserProfile.Designer.vb">
       <DependentUpon>UserProfile.vb</DependentUpon>
     </Compile>
@@ -175,6 +185,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AddPhysicalBook.resx">
+      <DependentUpon>AddPhysicalBook.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cart.resx">
       <DependentUpon>Cart.vb</DependentUpon>
     </EmbeddedResource>
@@ -216,6 +229,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UploadEbook.resx">
       <DependentUpon>UploadEbook.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserLibrary.resx">
+      <DependentUpon>UserLibrary.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserProfile.resx">
       <DependentUpon>UserProfile.vb</DependentUpon>

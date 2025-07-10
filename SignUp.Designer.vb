@@ -24,21 +24,21 @@ Partial Class SignUp
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SignUp))
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.dtpDOB = New System.Windows.Forms.DateTimePicker()
+        Me.txtPhone = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.txtConfirmPassword = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.txtEmail = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.txtAddress = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txtUsername = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtFullName = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -52,42 +52,42 @@ Partial Class SignUp
         '
         'Panel1
         '
-        Me.Panel1.Controls.Add(Me.DateTimePicker1)
-        Me.Panel1.Controls.Add(Me.TextBox6)
+        Me.Panel1.Controls.Add(Me.dtpDOB)
+        Me.Panel1.Controls.Add(Me.txtPhone)
         Me.Panel1.Controls.Add(Me.Label5)
-        Me.Panel1.Controls.Add(Me.TextBox7)
+        Me.Panel1.Controls.Add(Me.txtConfirmPassword)
         Me.Panel1.Controls.Add(Me.Label6)
-        Me.Panel1.Controls.Add(Me.TextBox8)
+        Me.Panel1.Controls.Add(Me.txtPassword)
         Me.Panel1.Controls.Add(Me.Label7)
-        Me.Panel1.Controls.Add(Me.TextBox9)
+        Me.Panel1.Controls.Add(Me.txtEmail)
         Me.Panel1.Controls.Add(Me.Label8)
-        Me.Panel1.Controls.Add(Me.TextBox4)
+        Me.Panel1.Controls.Add(Me.txtAddress)
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.Label4)
-        Me.Panel1.Controls.Add(Me.TextBox3)
+        Me.Panel1.Controls.Add(Me.txtUsername)
         Me.Panel1.Controls.Add(Me.Label2)
-        Me.Panel1.Controls.Add(Me.TextBox2)
+        Me.Panel1.Controls.Add(Me.txtFullName)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Location = New System.Drawing.Point(142, 131)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1033, 482)
         Me.Panel1.TabIndex = 0
         '
-        'DateTimePicker1
+        'dtpDOB
         '
-        Me.DateTimePicker1.CalendarFont = New System.Drawing.Font("Calibri", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateTimePicker1.Location = New System.Drawing.Point(47, 307)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(319, 22)
-        Me.DateTimePicker1.TabIndex = 19
+        Me.dtpDOB.CalendarFont = New System.Drawing.Font("Calibri", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtpDOB.Location = New System.Drawing.Point(47, 307)
+        Me.dtpDOB.Name = "dtpDOB"
+        Me.dtpDOB.Size = New System.Drawing.Size(319, 22)
+        Me.dtpDOB.TabIndex = 19
         '
-        'TextBox6
+        'txtPhone
         '
-        Me.TextBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox6.Location = New System.Drawing.Point(579, 409)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(319, 38)
-        Me.TextBox6.TabIndex = 18
+        Me.txtPhone.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPhone.Location = New System.Drawing.Point(579, 409)
+        Me.txtPhone.Name = "txtPhone"
+        Me.txtPhone.Size = New System.Drawing.Size(319, 38)
+        Me.txtPhone.TabIndex = 18
         '
         'Label5
         '
@@ -101,13 +101,13 @@ Partial Class SignUp
         Me.Label5.TabIndex = 17
         Me.Label5.Text = "Phone Number:"
         '
-        'TextBox7
+        'txtConfirmPassword
         '
-        Me.TextBox7.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox7.Location = New System.Drawing.Point(579, 296)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(319, 38)
-        Me.TextBox7.TabIndex = 16
+        Me.txtConfirmPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtConfirmPassword.Location = New System.Drawing.Point(579, 296)
+        Me.txtConfirmPassword.Name = "txtConfirmPassword"
+        Me.txtConfirmPassword.Size = New System.Drawing.Size(319, 38)
+        Me.txtConfirmPassword.TabIndex = 16
         '
         'Label6
         '
@@ -121,13 +121,13 @@ Partial Class SignUp
         Me.Label6.TabIndex = 15
         Me.Label6.Text = "Confirm Password:"
         '
-        'TextBox8
+        'txtPassword
         '
-        Me.TextBox8.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox8.Location = New System.Drawing.Point(579, 188)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(319, 38)
-        Me.TextBox8.TabIndex = 14
+        Me.txtPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPassword.Location = New System.Drawing.Point(579, 188)
+        Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.Size = New System.Drawing.Size(319, 38)
+        Me.txtPassword.TabIndex = 14
         '
         'Label7
         '
@@ -141,13 +141,13 @@ Partial Class SignUp
         Me.Label7.TabIndex = 13
         Me.Label7.Text = "Password:"
         '
-        'TextBox9
+        'txtEmail
         '
-        Me.TextBox9.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox9.Location = New System.Drawing.Point(579, 75)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(319, 38)
-        Me.TextBox9.TabIndex = 12
+        Me.txtEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtEmail.Location = New System.Drawing.Point(579, 75)
+        Me.txtEmail.Name = "txtEmail"
+        Me.txtEmail.Size = New System.Drawing.Size(319, 38)
+        Me.txtEmail.TabIndex = 12
         '
         'Label8
         '
@@ -161,13 +161,13 @@ Partial Class SignUp
         Me.Label8.TabIndex = 11
         Me.Label8.Text = "Email:"
         '
-        'TextBox4
+        'txtAddress
         '
-        Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(47, 409)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(319, 38)
-        Me.TextBox4.TabIndex = 10
+        Me.txtAddress.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAddress.Location = New System.Drawing.Point(47, 409)
+        Me.txtAddress.Name = "txtAddress"
+        Me.txtAddress.Size = New System.Drawing.Size(319, 38)
+        Me.txtAddress.TabIndex = 10
         '
         'Label3
         '
@@ -193,13 +193,13 @@ Partial Class SignUp
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "Date of Birth:"
         '
-        'TextBox3
+        'txtUsername
         '
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(47, 188)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(319, 38)
-        Me.TextBox3.TabIndex = 6
+        Me.txtUsername.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtUsername.Location = New System.Drawing.Point(47, 188)
+        Me.txtUsername.Name = "txtUsername"
+        Me.txtUsername.Size = New System.Drawing.Size(319, 38)
+        Me.txtUsername.TabIndex = 6
         '
         'Label2
         '
@@ -213,13 +213,13 @@ Partial Class SignUp
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Username:"
         '
-        'TextBox2
+        'txtFullName
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(47, 75)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(319, 38)
-        Me.TextBox2.TabIndex = 4
+        Me.txtFullName.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtFullName.Location = New System.Drawing.Point(47, 75)
+        Me.txtFullName.Name = "txtFullName"
+        Me.txtFullName.Size = New System.Drawing.Size(319, 38)
+        Me.txtFullName.TabIndex = 4
         '
         'Label1
         '
@@ -313,21 +313,21 @@ Partial Class SignUp
     Friend WithEvents Panel2 As Panel
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txtFullName As TextBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents dtpDOB As DateTimePicker
+    Friend WithEvents txtPhone As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents txtConfirmPassword As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents TextBox8 As TextBox
+    Friend WithEvents txtPassword As TextBox
     Friend WithEvents Label7 As Label
-    Friend WithEvents TextBox9 As TextBox
+    Friend WithEvents txtEmail As TextBox
     Friend WithEvents Label8 As Label
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents txtAddress As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents txtUsername As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button

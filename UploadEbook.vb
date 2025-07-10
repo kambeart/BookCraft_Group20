@@ -172,4 +172,8 @@ Public Class UploadEbook
             Return ""
         End Try
     End Function
+
+    Private Sub txtDesc_TextChanged(sender As Object, e As EventArgs) Handles txtDesc.TextChanged
+
+    End Sub
 End Class

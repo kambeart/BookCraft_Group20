@@ -39,8 +39,8 @@ Partial Class UploadEbook
         Me.btnUploadChap = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.rbNewEbook = New System.Windows.Forms.RadioButton()
         Me.rbNewChap = New System.Windows.Forms.RadioButton()
+        Me.rbNewEbook = New System.Windows.Forms.RadioButton()
         Me.cboEbook = New System.Windows.Forms.ComboBox()
         CType(Me.picCover, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -208,17 +208,6 @@ Partial Class UploadEbook
         Me.Panel2.Size = New System.Drawing.Size(382, 100)
         Me.Panel2.TabIndex = 4
         '
-        'rbNewEbook
-        '
-        Me.rbNewEbook.AutoSize = True
-        Me.rbNewEbook.Location = New System.Drawing.Point(24, 40)
-        Me.rbNewEbook.Name = "rbNewEbook"
-        Me.rbNewEbook.Size = New System.Drawing.Size(98, 20)
-        Me.rbNewEbook.TabIndex = 0
-        Me.rbNewEbook.TabStop = True
-        Me.rbNewEbook.Text = "New Ebook"
-        Me.rbNewEbook.UseVisualStyleBackColor = True
-        '
         'rbNewChap
         '
         Me.rbNewChap.AutoSize = True
@@ -229,6 +218,17 @@ Partial Class UploadEbook
         Me.rbNewChap.TabStop = True
         Me.rbNewChap.Text = "New Chapter"
         Me.rbNewChap.UseVisualStyleBackColor = True
+        '
+        'rbNewEbook
+        '
+        Me.rbNewEbook.AutoSize = True
+        Me.rbNewEbook.Location = New System.Drawing.Point(24, 40)
+        Me.rbNewEbook.Name = "rbNewEbook"
+        Me.rbNewEbook.Size = New System.Drawing.Size(98, 20)
+        Me.rbNewEbook.TabIndex = 0
+        Me.rbNewEbook.TabStop = True
+        Me.rbNewEbook.Text = "New Ebook"
+        Me.rbNewEbook.UseVisualStyleBackColor = True
         '
         'cboEbook
         '

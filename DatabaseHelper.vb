@@ -4,7 +4,7 @@
 Public Class DatabaseHelper
     ' Shared connection string (update your path)
     Private Shared ReadOnly ConnString As String =
-        "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Yiwen\Documents\BookCraft_Group20_Database.accdb;"
+        "Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\Yiwen\Documents\BookCraft_Group20_Database.accdb;"
 
     ' Method to get a connection
     Public Shared Function GetConnection() As OleDbConnection
