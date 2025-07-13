@@ -101,6 +101,7 @@
     <Compile Include="MarketPlace.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Module1.vb" />
     <Compile Include="PaymentForm.Designer.vb">
       <DependentUpon>PaymentForm.vb</DependentUpon>
     </Compile>
@@ -262,7 +263,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="BookCraft_Group20_Database.accdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="My Project\Resources\75519 icon size 200.png" />
     <Content Include="My Project\Resources\75519_icon_size_15-removebg-preview.png" />
@@ -293,6 +294,7 @@
     <Content Include="My Project\Resources\x exit icon resize.jpg" />
     <Content Include="My Project\Resources\x_icon_150997 resize.jpg" />
     <Content Include="My Project\Resources\x_icon_150997 resize1.jpg" />
+    <None Include="Resources\pfp Icon.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

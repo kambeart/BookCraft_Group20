@@ -38,8 +38,13 @@ Partial Class Cart
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.btnNextPage = New System.Windows.Forms.Button()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.ListBox2 = New System.Windows.Forms.ListBox()
+        Me.ListBox3 = New System.Windows.Forms.ListBox()
+        Me.ListBox4 = New System.Windows.Forms.ListBox()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -97,7 +102,7 @@ Partial Class Cart
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Calibri", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(984, 3)
+        Me.Label5.Location = New System.Drawing.Point(1002, 3)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(71, 35)
         Me.Label5.TabIndex = 27
@@ -121,7 +126,7 @@ Partial Class Cart
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Calibri", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(819, 3)
+        Me.Label4.Location = New System.Drawing.Point(820, 3)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(115, 35)
         Me.Label4.TabIndex = 26
@@ -133,7 +138,7 @@ Partial Class Cart
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Calibri", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(656, 3)
+        Me.Label3.Location = New System.Drawing.Point(646, 3)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(125, 35)
         Me.Label3.TabIndex = 25
@@ -143,6 +148,10 @@ Partial Class Cart
         '
         Me.Panel3.BackColor = System.Drawing.Color.White
         Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel3.Controls.Add(Me.ListBox4)
+        Me.Panel3.Controls.Add(Me.ListBox3)
+        Me.Panel3.Controls.Add(Me.ListBox2)
+        Me.Panel3.Controls.Add(Me.ListBox1)
         Me.Panel3.Location = New System.Drawing.Point(38, 176)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(1258, 467)
@@ -221,6 +230,42 @@ Partial Class Cart
         Me.btnNextPage.Text = ">"
         Me.btnNextPage.UseVisualStyleBackColor = False
         '
+        'ListBox1
+        '
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.ItemHeight = 16
+        Me.ListBox1.Location = New System.Drawing.Point(27, 23)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(529, 420)
+        Me.ListBox1.TabIndex = 1
+        '
+        'ListBox2
+        '
+        Me.ListBox2.FormattingEnabled = True
+        Me.ListBox2.ItemHeight = 16
+        Me.ListBox2.Location = New System.Drawing.Point(627, 22)
+        Me.ListBox2.Name = "ListBox2"
+        Me.ListBox2.Size = New System.Drawing.Size(163, 420)
+        Me.ListBox2.TabIndex = 2
+        '
+        'ListBox3
+        '
+        Me.ListBox3.FormattingEnabled = True
+        Me.ListBox3.ItemHeight = 16
+        Me.ListBox3.Location = New System.Drawing.Point(796, 23)
+        Me.ListBox3.Name = "ListBox3"
+        Me.ListBox3.Size = New System.Drawing.Size(163, 420)
+        Me.ListBox3.TabIndex = 3
+        '
+        'ListBox4
+        '
+        Me.ListBox4.FormattingEnabled = True
+        Me.ListBox4.ItemHeight = 16
+        Me.ListBox4.Location = New System.Drawing.Point(965, 22)
+        Me.ListBox4.Name = "ListBox4"
+        Me.ListBox4.Size = New System.Drawing.Size(163, 420)
+        Me.ListBox4.TabIndex = 4
+        '
         'Cart
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -238,6 +283,7 @@ Partial Class Cart
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        Me.Panel3.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
         Me.ResumeLayout(False)
@@ -259,4 +305,8 @@ Partial Class Cart
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Button3 As Button
     Friend WithEvents Button1 As Button
+    Friend WithEvents ListBox4 As ListBox
+    Friend WithEvents ListBox3 As ListBox
+    Friend WithEvents ListBox2 As ListBox
+    Friend WithEvents ListBox1 As ListBox
 End Class

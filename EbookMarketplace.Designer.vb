@@ -40,9 +40,9 @@ Partial Class EbookMarketplace
         '
         Me.btnProfile.BackColor = System.Drawing.Color.Sienna
         Me.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnProfile.Location = New System.Drawing.Point(891, 644)
+        Me.btnProfile.Location = New System.Drawing.Point(891, 620)
         Me.btnProfile.Name = "btnProfile"
-        Me.btnProfile.Size = New System.Drawing.Size(457, 77)
+        Me.btnProfile.Size = New System.Drawing.Size(457, 101)
         Me.btnProfile.TabIndex = 13
         Me.btnProfile.UseVisualStyleBackColor = False
         '
@@ -89,9 +89,9 @@ Partial Class EbookMarketplace
         '
         Me.btnMarket.BackColor = System.Drawing.Color.Sienna
         Me.btnMarket.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMarket.Location = New System.Drawing.Point(-1, 644)
+        Me.btnMarket.Location = New System.Drawing.Point(-1, 620)
         Me.btnMarket.Name = "btnMarket"
-        Me.btnMarket.Size = New System.Drawing.Size(444, 77)
+        Me.btnMarket.Size = New System.Drawing.Size(444, 101)
         Me.btnMarket.TabIndex = 12
         Me.btnMarket.UseVisualStyleBackColor = False
         '
@@ -99,9 +99,9 @@ Partial Class EbookMarketplace
         '
         Me.btnEbook.BackColor = System.Drawing.Color.Sienna
         Me.btnEbook.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEbook.Location = New System.Drawing.Point(444, 644)
+        Me.btnEbook.Location = New System.Drawing.Point(444, 620)
         Me.btnEbook.Name = "btnEbook"
-        Me.btnEbook.Size = New System.Drawing.Size(446, 77)
+        Me.btnEbook.Size = New System.Drawing.Size(446, 101)
         Me.btnEbook.TabIndex = 11
         Me.btnEbook.UseVisualStyleBackColor = False
         '
