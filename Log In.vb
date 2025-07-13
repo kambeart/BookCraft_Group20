@@ -35,7 +35,7 @@ Public Class Form1
             Dim userFound As Integer = CInt(cmd.ExecuteScalar())
             conn.Close()
 
-            If userFound > 0 Then
+            If userFound > 0 Then Thenw
                 MessageBox.Show("Login successful!")
                 Me.Hide()
                 MarketPlace.Show()
@@ -51,8 +51,10 @@ Public Class Form1
         End Try
     End Sub
 
+    'This is just a test' 
     Private Sub btnSignUp_Click(sender As Object, e As EventArgs) Handles btnSignUp.Click
         Me.Hide()
         SignUp.Show()
     End Sub
+
 End Class
