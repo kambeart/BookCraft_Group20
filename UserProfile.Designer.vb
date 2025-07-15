@@ -34,9 +34,6 @@ Partial Class UserProfile
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.btnProfile = New System.Windows.Forms.Button()
-        Me.btnMarket = New System.Windows.Forms.Button()
-        Me.btnEbook = New System.Windows.Forms.Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.LinkLabel4 = New System.Windows.Forms.LinkLabel()
         Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
@@ -58,7 +55,13 @@ Partial Class UserProfile
         Me.Label1 = New System.Windows.Forms.Label()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.picProfile = New System.Windows.Forms.PictureBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.btnProfile = New System.Windows.Forms.Button()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
@@ -69,11 +72,16 @@ Partial Class UserProfile
         Me.Panel6.SuspendLayout()
         Me.Panel4.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picProfile, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TableLayoutPanel1.SuspendLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.Label8)
+        Me.Panel1.Controls.Add(Me.Label7)
         Me.Panel1.Controls.Add(Me.Button4)
         Me.Panel1.Controls.Add(Me.Button5)
         Me.Panel1.Controls.Add(Me.Button3)
@@ -94,6 +102,7 @@ Partial Class UserProfile
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(238, 65)
         Me.Button4.TabIndex = 15
+        Me.Button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button4.UseVisualStyleBackColor = False
         '
         'Button5
@@ -101,11 +110,14 @@ Partial Class UserProfile
         Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(103, Byte), Integer), CType(CType(72, Byte), Integer))
         Me.Button5.FlatAppearance.BorderSize = 0
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.ForeColor = System.Drawing.Color.Black
+        Me.Button5.Font = New System.Drawing.Font("Calibri", 16.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button5.ForeColor = System.Drawing.Color.White
         Me.Button5.Location = New System.Drawing.Point(0, 275)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(239, 65)
         Me.Button5.TabIndex = 14
+        Me.Button5.Text = "My Statistics"
+        Me.Button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button5.UseVisualStyleBackColor = False
         '
         'Button3
@@ -113,11 +125,14 @@ Partial Class UserProfile
         Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(103, Byte), Integer), CType(CType(72, Byte), Integer))
         Me.Button3.FlatAppearance.BorderSize = 0
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.ForeColor = System.Drawing.Color.Black
+        Me.Button3.Font = New System.Drawing.Font("Calibri", 16.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.ForeColor = System.Drawing.Color.White
         Me.Button3.Location = New System.Drawing.Point(0, 212)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(239, 65)
         Me.Button3.TabIndex = 13
+        Me.Button3.Text = "My Catalogue"
+        Me.Button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button3.UseVisualStyleBackColor = False
         '
         'Button2
@@ -125,11 +140,14 @@ Partial Class UserProfile
         Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(103, Byte), Integer), CType(CType(72, Byte), Integer))
         Me.Button2.FlatAppearance.BorderSize = 0
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.ForeColor = System.Drawing.Color.Black
+        Me.Button2.Font = New System.Drawing.Font("Calibri", 16.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.White
         Me.Button2.Location = New System.Drawing.Point(1, 147)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(238, 65)
         Me.Button2.TabIndex = 12
+        Me.Button2.Text = "My Library"
+        Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button2.UseVisualStyleBackColor = False
         '
         'Button1
@@ -151,7 +169,7 @@ Partial Class UserProfile
         Me.Panel2.Controls.Add(Me.TextBox3)
         Me.Panel2.Controls.Add(Me.TextBox2)
         Me.Panel2.Controls.Add(Me.TextBox1)
-        Me.Panel2.Controls.Add(Me.PictureBox1)
+        Me.Panel2.Controls.Add(Me.picProfile)
         Me.Panel2.Location = New System.Drawing.Point(245, 12)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1091, 244)
@@ -197,36 +215,6 @@ Partial Class UserProfile
         Me.TextBox1.Size = New System.Drawing.Size(559, 53)
         Me.TextBox1.TabIndex = 7
         '
-        'btnProfile
-        '
-        Me.btnProfile.BackColor = System.Drawing.Color.Sienna
-        Me.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnProfile.Location = New System.Drawing.Point(893, 644)
-        Me.btnProfile.Name = "btnProfile"
-        Me.btnProfile.Size = New System.Drawing.Size(457, 77)
-        Me.btnProfile.TabIndex = 6
-        Me.btnProfile.UseVisualStyleBackColor = False
-        '
-        'btnMarket
-        '
-        Me.btnMarket.BackColor = System.Drawing.Color.Sienna
-        Me.btnMarket.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMarket.Location = New System.Drawing.Point(1, 644)
-        Me.btnMarket.Name = "btnMarket"
-        Me.btnMarket.Size = New System.Drawing.Size(444, 77)
-        Me.btnMarket.TabIndex = 5
-        Me.btnMarket.UseVisualStyleBackColor = False
-        '
-        'btnEbook
-        '
-        Me.btnEbook.BackColor = System.Drawing.Color.Sienna
-        Me.btnEbook.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEbook.Location = New System.Drawing.Point(446, 644)
-        Me.btnEbook.Name = "btnEbook"
-        Me.btnEbook.Size = New System.Drawing.Size(446, 77)
-        Me.btnEbook.TabIndex = 4
-        Me.btnEbook.UseVisualStyleBackColor = False
-        '
         'Panel3
         '
         Me.Panel3.Controls.Add(Me.LinkLabel4)
@@ -239,15 +227,15 @@ Partial Class UserProfile
         Me.Panel3.Controls.Add(Me.Panel9)
         Me.Panel3.Controls.Add(Me.Panel6)
         Me.Panel3.Controls.Add(Me.Panel4)
-        Me.Panel3.Location = New System.Drawing.Point(245, 262)
+        Me.Panel3.Location = New System.Drawing.Point(245, 276)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1044, 376)
+        Me.Panel3.Size = New System.Drawing.Size(1044, 341)
         Me.Panel3.TabIndex = 10
         '
         'LinkLabel4
         '
         Me.LinkLabel4.AutoSize = True
-        Me.LinkLabel4.Location = New System.Drawing.Point(936, 319)
+        Me.LinkLabel4.Location = New System.Drawing.Point(936, 290)
         Me.LinkLabel4.Name = "LinkLabel4"
         Me.LinkLabel4.Size = New System.Drawing.Size(93, 16)
         Me.LinkLabel4.TabIndex = 31
@@ -257,7 +245,7 @@ Partial Class UserProfile
         'LinkLabel3
         '
         Me.LinkLabel3.AutoSize = True
-        Me.LinkLabel3.Location = New System.Drawing.Point(936, 168)
+        Me.LinkLabel3.Location = New System.Drawing.Point(936, 139)
         Me.LinkLabel3.Name = "LinkLabel3"
         Me.LinkLabel3.Size = New System.Drawing.Size(93, 16)
         Me.LinkLabel3.TabIndex = 28
@@ -267,7 +255,7 @@ Partial Class UserProfile
         'LinkLabel2
         '
         Me.LinkLabel2.AutoSize = True
-        Me.LinkLabel2.Location = New System.Drawing.Point(936, 118)
+        Me.LinkLabel2.Location = New System.Drawing.Point(936, 89)
         Me.LinkLabel2.Name = "LinkLabel2"
         Me.LinkLabel2.Size = New System.Drawing.Size(93, 16)
         Me.LinkLabel2.TabIndex = 27
@@ -277,7 +265,7 @@ Partial Class UserProfile
         'LinkLabel1
         '
         Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Location = New System.Drawing.Point(936, 65)
+        Me.LinkLabel1.Location = New System.Drawing.Point(936, 36)
         Me.LinkLabel1.Name = "LinkLabel1"
         Me.LinkLabel1.Size = New System.Drawing.Size(93, 16)
         Me.LinkLabel1.TabIndex = 26
@@ -290,7 +278,7 @@ Partial Class UserProfile
         Me.Panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.Panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel7.Controls.Add(Me.Label6)
-        Me.Panel7.Location = New System.Drawing.Point(82, 303)
+        Me.Panel7.Location = New System.Drawing.Point(82, 274)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(834, 53)
         Me.Panel7.TabIndex = 4
@@ -313,7 +301,7 @@ Partial Class UserProfile
         Me.Panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.Panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel5.Controls.Add(Me.Label3)
-        Me.Panel5.Location = New System.Drawing.Point(82, 144)
+        Me.Panel5.Location = New System.Drawing.Point(82, 115)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(834, 53)
         Me.Panel5.TabIndex = 1
@@ -336,7 +324,7 @@ Partial Class UserProfile
         Me.Panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.Panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel8.Controls.Add(Me.Label5)
-        Me.Panel8.Location = New System.Drawing.Point(82, 250)
+        Me.Panel8.Location = New System.Drawing.Point(82, 221)
         Me.Panel8.Name = "Panel8"
         Me.Panel8.Size = New System.Drawing.Size(834, 53)
         Me.Panel8.TabIndex = 5
@@ -361,7 +349,7 @@ Partial Class UserProfile
         Me.Panel9.Controls.Add(Me.RadioButton_Female)
         Me.Panel9.Controls.Add(Me.RadioButton_Male)
         Me.Panel9.Controls.Add(Me.Label4)
-        Me.Panel9.Location = New System.Drawing.Point(82, 197)
+        Me.Panel9.Location = New System.Drawing.Point(82, 168)
         Me.Panel9.Name = "Panel9"
         Me.Panel9.Size = New System.Drawing.Size(834, 53)
         Me.Panel9.TabIndex = 3
@@ -410,7 +398,7 @@ Partial Class UserProfile
         Me.Panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.Panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel6.Controls.Add(Me.Label2)
-        Me.Panel6.Location = New System.Drawing.Point(82, 91)
+        Me.Panel6.Location = New System.Drawing.Point(82, 62)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(834, 53)
         Me.Panel6.TabIndex = 2
@@ -433,7 +421,7 @@ Partial Class UserProfile
         Me.Panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.Panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel4.Controls.Add(Me.Label1)
-        Me.Panel4.Location = New System.Drawing.Point(82, 38)
+        Me.Panel4.Location = New System.Drawing.Point(82, 9)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(834, 53)
         Me.Panel4.TabIndex = 0
@@ -464,15 +452,91 @@ Partial Class UserProfile
         Me.PictureBox2.TabIndex = 10
         Me.PictureBox2.TabStop = False
         '
-        'PictureBox1
+        'picProfile
         '
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox1.Location = New System.Drawing.Point(26, 19)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(235, 206)
-        Me.PictureBox1.TabIndex = 7
-        Me.PictureBox1.TabStop = False
+        Me.picProfile.BackgroundImage = CType(resources.GetObject("picProfile.BackgroundImage"), System.Drawing.Image)
+        Me.picProfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.picProfile.Location = New System.Drawing.Point(26, 19)
+        Me.picProfile.Name = "picProfile"
+        Me.picProfile.Size = New System.Drawing.Size(235, 206)
+        Me.picProfile.TabIndex = 7
+        Me.picProfile.TabStop = False
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label7.Font = New System.Drawing.Font("Segoe UI", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.White
+        Me.Label7.Location = New System.Drawing.Point(12, 21)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(113, 54)
+        Me.Label7.TabIndex = 5
+        Me.Label7.Text = "User "
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label8.Font = New System.Drawing.Font("Segoe UI", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.White
+        Me.Label8.Location = New System.Drawing.Point(12, 71)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(136, 54)
+        Me.Label8.TabIndex = 16
+        Me.Label8.Text = "Profile"
+        '
+        'TableLayoutPanel1
+        '
+        Me.TableLayoutPanel1.BackColor = System.Drawing.Color.Sienna
+        Me.TableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.InsetDouble
+        Me.TableLayoutPanel1.ColumnCount = 3
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
+        Me.TableLayoutPanel1.Controls.Add(Me.PictureBox6, 2, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.btnProfile, 0, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.PictureBox7, 1, 0)
+        Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 612)
+        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
+        Me.TableLayoutPanel1.RowCount = 1
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1348, 109)
+        Me.TableLayoutPanel1.TabIndex = 40
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.BackgroundImage = Global.BookCraft_Group20.My.Resources.Resources.usericon
+        Me.PictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox6.Location = New System.Drawing.Point(902, 6)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(440, 97)
+        Me.PictureBox6.TabIndex = 40
+        Me.PictureBox6.TabStop = False
+        '
+        'btnProfile
+        '
+        Me.btnProfile.BackgroundImage = Global.BookCraft_Group20.My.Resources.Resources.bookicon
+        Me.btnProfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnProfile.FlatAppearance.BorderSize = 0
+        Me.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnProfile.Location = New System.Drawing.Point(6, 6)
+        Me.btnProfile.Name = "btnProfile"
+        Me.btnProfile.Size = New System.Drawing.Size(439, 97)
+        Me.btnProfile.TabIndex = 40
+        Me.btnProfile.UseVisualStyleBackColor = True
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.BackgroundImage = Global.BookCraft_Group20.My.Resources.Resources.ebookicon
+        Me.PictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox7.Location = New System.Drawing.Point(454, 6)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(439, 97)
+        Me.PictureBox7.TabIndex = 41
+        Me.PictureBox7.TabStop = False
         '
         'UserProfile
         '
@@ -480,15 +544,14 @@ Partial Class UserProfile
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(188, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1348, 721)
+        Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Controls.Add(Me.Panel3)
-        Me.Controls.Add(Me.btnProfile)
         Me.Controls.Add(Me.Panel2)
-        Me.Controls.Add(Me.btnMarket)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.btnEbook)
         Me.Name = "UserProfile"
         Me.Text = "UserProfile"
         Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         Me.Panel3.ResumeLayout(False)
@@ -506,20 +569,20 @@ Partial Class UserProfile
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picProfile, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TableLayoutPanel1.ResumeLayout(False)
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents btnProfile As Button
-    Friend WithEvents btnMarket As Button
-    Friend WithEvents btnEbook As Button
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents picProfile As PictureBox
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Panel7 As Panel
@@ -547,4 +610,10 @@ Partial Class UserProfile
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents RadioButton_Female As RadioButton
     Friend WithEvents RadioButton_Male As RadioButton
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
+    Friend WithEvents PictureBox6 As PictureBox
+    Friend WithEvents btnProfile As Button
+    Friend WithEvents PictureBox7 As PictureBox
 End Class

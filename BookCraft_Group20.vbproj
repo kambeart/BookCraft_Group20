@@ -76,7 +76,9 @@
     <Compile Include="AddPhysicalBook.Designer.vb">
       <DependentUpon>AddPhysicalBook.vb</DependentUpon>
     </Compile>
-    <Compile Include="AddPhysicalBook.vb" />
+    <Compile Include="AddPhysicalBook.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="BookCraft_DataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
