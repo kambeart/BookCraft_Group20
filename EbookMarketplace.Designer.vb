@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class EbookMarketplace
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,17 +20,17 @@ Partial Class EbookMarketplace
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EbookMarketplace))
         Me.btnProfile = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnMarket = New System.Windows.Forms.Button()
         Me.btnEbook = New System.Windows.Forms.Button()
         Me.btnNextPage = New System.Windows.Forms.Button()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -40,9 +40,9 @@ Partial Class EbookMarketplace
         '
         Me.btnProfile.BackColor = System.Drawing.Color.Sienna
         Me.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnProfile.Location = New System.Drawing.Point(891, 644)
+        Me.btnProfile.Location = New System.Drawing.Point(891, 620)
         Me.btnProfile.Name = "btnProfile"
-        Me.btnProfile.Size = New System.Drawing.Size(457, 77)
+        Me.btnProfile.Size = New System.Drawing.Size(457, 101)
         Me.btnProfile.TabIndex = 13
         Me.btnProfile.UseVisualStyleBackColor = False
         '
@@ -56,15 +56,6 @@ Partial Class EbookMarketplace
         Me.Panel1.Size = New System.Drawing.Size(1349, 124)
         Me.Panel1.TabIndex = 10
         '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackgroundImage = CType(resources.GetObject("PictureBox2.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(1150, 12)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(116, 92)
-        Me.PictureBox2.TabIndex = 10
-        Me.PictureBox2.TabStop = False
-        '
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("Calibri", 25.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -75,23 +66,13 @@ Partial Class EbookMarketplace
         Me.TextBox1.TabIndex = 4
         Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(143, 125)
-        Me.PictureBox1.TabIndex = 3
-        Me.PictureBox1.TabStop = False
-        '
         'btnMarket
         '
         Me.btnMarket.BackColor = System.Drawing.Color.Sienna
         Me.btnMarket.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMarket.Location = New System.Drawing.Point(-1, 644)
+        Me.btnMarket.Location = New System.Drawing.Point(-1, 620)
         Me.btnMarket.Name = "btnMarket"
-        Me.btnMarket.Size = New System.Drawing.Size(444, 77)
+        Me.btnMarket.Size = New System.Drawing.Size(444, 101)
         Me.btnMarket.TabIndex = 12
         Me.btnMarket.UseVisualStyleBackColor = False
         '
@@ -99,9 +80,9 @@ Partial Class EbookMarketplace
         '
         Me.btnEbook.BackColor = System.Drawing.Color.Sienna
         Me.btnEbook.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEbook.Location = New System.Drawing.Point(444, 644)
+        Me.btnEbook.Location = New System.Drawing.Point(444, 620)
         Me.btnEbook.Name = "btnEbook"
-        Me.btnEbook.Size = New System.Drawing.Size(446, 77)
+        Me.btnEbook.Size = New System.Drawing.Size(446, 101)
         Me.btnEbook.TabIndex = 11
         Me.btnEbook.UseVisualStyleBackColor = False
         '
@@ -117,6 +98,25 @@ Partial Class EbookMarketplace
         Me.btnNextPage.TabIndex = 14
         Me.btnNextPage.Text = ">"
         Me.btnNextPage.UseVisualStyleBackColor = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackgroundImage = CType(resources.GetObject("PictureBox2.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(1150, 12)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(116, 92)
+        Me.PictureBox2.TabIndex = 10
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(143, 125)
+        Me.PictureBox1.TabIndex = 3
+        Me.PictureBox1.TabStop = False
         '
         'EbookMarketplace
         '

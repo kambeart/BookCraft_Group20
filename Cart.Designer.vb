@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Cart
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,9 +20,11 @@ Partial Class Cart
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Cart))
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -32,14 +34,25 @@ Partial Class Cart
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.dgvCart = New System.Windows.Forms.DataGridView()
+        Me.ProductID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Title = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.UnitPrice = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Quantity = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TotalPrice = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.RemoveItem = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.btnClear = New System.Windows.Forms.Button()
+        Me.btnCheckout = New System.Windows.Forms.Button()
+        Me.txtTotal = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.btnNextPage = New System.Windows.Forms.Button()
+        Me.btnPreviousPage = New System.Windows.Forms.Button()
+        Me.lblPageInfo = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        Me.Panel3.SuspendLayout()
+        CType(Me.dgvCart, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -97,7 +110,7 @@ Partial Class Cart
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Calibri", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(984, 3)
+        Me.Label5.Location = New System.Drawing.Point(1002, 3)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(71, 35)
         Me.Label5.TabIndex = 27
@@ -121,7 +134,7 @@ Partial Class Cart
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Calibri", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(819, 3)
+        Me.Label4.Location = New System.Drawing.Point(820, 3)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(115, 35)
         Me.Label4.TabIndex = 26
@@ -133,7 +146,7 @@ Partial Class Cart
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Calibri", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(656, 3)
+        Me.Label3.Location = New System.Drawing.Point(646, 3)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(125, 35)
         Me.Label3.TabIndex = 25
@@ -143,58 +156,137 @@ Partial Class Cart
         '
         Me.Panel3.BackColor = System.Drawing.Color.White
         Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel3.Controls.Add(Me.dgvCart)
         Me.Panel3.Location = New System.Drawing.Point(38, 176)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(1258, 467)
         Me.Panel3.TabIndex = 3
         '
+        'dgvCart
+        '
+        Me.dgvCart.AllowUserToAddRows = False
+        Me.dgvCart.AllowUserToDeleteRows = False
+        Me.dgvCart.BackgroundColor = System.Drawing.Color.White
+        Me.dgvCart.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgvCart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvCart.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ProductID, Me.Title, Me.UnitPrice, Me.Quantity, Me.TotalPrice, Me.RemoveItem})
+        Me.dgvCart.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgvCart.Location = New System.Drawing.Point(0, 0)
+        Me.dgvCart.Name = "dgvCart"
+        Me.dgvCart.ReadOnly = True
+        Me.dgvCart.RowHeadersVisible = False
+        Me.dgvCart.RowHeadersWidth = 51
+        Me.dgvCart.RowTemplate.Height = 24
+        Me.dgvCart.Size = New System.Drawing.Size(1256, 465)
+        Me.dgvCart.TabIndex = 0
+        '
+        'ProductID
+        '
+        Me.ProductID.HeaderText = ""
+        Me.ProductID.MinimumWidth = 6
+        Me.ProductID.Name = "ProductID"
+        Me.ProductID.ReadOnly = True
+        Me.ProductID.Visible = False
+        Me.ProductID.Width = 125
+        '
+        'Title
+        '
+        Me.Title.HeaderText = "Item"
+        Me.Title.MinimumWidth = 6
+        Me.Title.Name = "Title"
+        Me.Title.ReadOnly = True
+        Me.Title.Visible = False
+        Me.Title.Width = 125
+        '
+        'UnitPrice
+        '
+        DataGridViewCellStyle3.Format = "N2"
+        Me.UnitPrice.DefaultCellStyle = DataGridViewCellStyle3
+        Me.UnitPrice.HeaderText = "Unit Price"
+        Me.UnitPrice.MinimumWidth = 6
+        Me.UnitPrice.Name = "UnitPrice"
+        Me.UnitPrice.ReadOnly = True
+        Me.UnitPrice.Visible = False
+        Me.UnitPrice.Width = 125
+        '
+        'Quantity
+        '
+        Me.Quantity.HeaderText = "Quantity"
+        Me.Quantity.MinimumWidth = 6
+        Me.Quantity.Name = "Quantity"
+        Me.Quantity.ReadOnly = True
+        Me.Quantity.Visible = False
+        Me.Quantity.Width = 125
+        '
+        'TotalPrice
+        '
+        DataGridViewCellStyle4.Format = "N2"
+        Me.TotalPrice.DefaultCellStyle = DataGridViewCellStyle4
+        Me.TotalPrice.HeaderText = "Price"
+        Me.TotalPrice.MinimumWidth = 6
+        Me.TotalPrice.Name = "TotalPrice"
+        Me.TotalPrice.ReadOnly = True
+        Me.TotalPrice.Visible = False
+        Me.TotalPrice.Width = 125
+        '
+        'RemoveItem
+        '
+        Me.RemoveItem.HeaderText = ""
+        Me.RemoveItem.MinimumWidth = 6
+        Me.RemoveItem.Name = "RemoveItem"
+        Me.RemoveItem.ReadOnly = True
+        Me.RemoveItem.Text = "X"
+        Me.RemoveItem.UseColumnTextForButtonValue = True
+        Me.RemoveItem.Visible = False
+        Me.RemoveItem.Width = 125
+        '
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.White
         Me.Panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel4.Controls.Add(Me.Button3)
-        Me.Panel4.Controls.Add(Me.Button1)
-        Me.Panel4.Controls.Add(Me.TextBox1)
+        Me.Panel4.Controls.Add(Me.btnClear)
+        Me.Panel4.Controls.Add(Me.btnCheckout)
+        Me.Panel4.Controls.Add(Me.txtTotal)
         Me.Panel4.Controls.Add(Me.Label6)
         Me.Panel4.Location = New System.Drawing.Point(38, 649)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(1258, 52)
         Me.Panel4.TabIndex = 3
         '
-        'Button3
+        'btnClear
         '
-        Me.Button3.BackColor = System.Drawing.Color.AliceBlue
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Button3.Location = New System.Drawing.Point(16, 3)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(121, 42)
-        Me.Button3.TabIndex = 30
-        Me.Button3.Text = "Clear List"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.btnClear.BackColor = System.Drawing.Color.AliceBlue
+        Me.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClear.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClear.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.btnClear.Location = New System.Drawing.Point(16, 3)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(121, 42)
+        Me.btnClear.TabIndex = 30
+        Me.btnClear.Text = "Clear List"
+        Me.btnClear.UseVisualStyleBackColor = False
         '
-        'Button1
+        'btnCheckout
         '
-        Me.Button1.BackColor = System.Drawing.Color.Sienna
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button1.Location = New System.Drawing.Point(1108, 3)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(121, 42)
-        Me.Button1.TabIndex = 21
-        Me.Button1.Text = "Check Out"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnCheckout.BackColor = System.Drawing.Color.Sienna
+        Me.btnCheckout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCheckout.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCheckout.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnCheckout.Location = New System.Drawing.Point(1108, 3)
+        Me.btnCheckout.Name = "btnCheckout"
+        Me.btnCheckout.Size = New System.Drawing.Size(121, 42)
+        Me.btnCheckout.TabIndex = 21
+        Me.btnCheckout.Text = "Check Out"
+        Me.btnCheckout.UseVisualStyleBackColor = False
         '
-        'TextBox1
+        'txtTotal
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Calibri", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(965, 6)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(108, 36)
-        Me.TextBox1.TabIndex = 29
+        Me.txtTotal.Font = New System.Drawing.Font("Calibri", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTotal.Location = New System.Drawing.Point(965, 6)
+        Me.txtTotal.Name = "txtTotal"
+        Me.txtTotal.ReadOnly = True
+        Me.txtTotal.Size = New System.Drawing.Size(108, 36)
+        Me.txtTotal.TabIndex = 29
         '
         'Label6
         '
@@ -221,13 +313,41 @@ Partial Class Cart
         Me.btnNextPage.Text = ">"
         Me.btnNextPage.UseVisualStyleBackColor = False
         '
+        'btnPreviousPage
+        '
+        Me.btnPreviousPage.BackColor = System.Drawing.SystemColors.InactiveCaption
+        Me.btnPreviousPage.FlatAppearance.BorderSize = 0
+        Me.btnPreviousPage.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnPreviousPage.Font = New System.Drawing.Font("Calibri", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPreviousPage.Location = New System.Drawing.Point(4, 319)
+        Me.btnPreviousPage.Name = "btnPreviousPage"
+        Me.btnPreviousPage.Size = New System.Drawing.Size(75, 81)
+        Me.btnPreviousPage.TabIndex = 12
+        Me.btnPreviousPage.Text = "<"
+        Me.btnPreviousPage.UseVisualStyleBackColor = False
+        '
+        'lblPageInfo
+        '
+        Me.lblPageInfo.AutoSize = True
+        Me.lblPageInfo.BackColor = System.Drawing.Color.Transparent
+        Me.lblPageInfo.Font = New System.Drawing.Font("Calibri", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPageInfo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblPageInfo.Location = New System.Drawing.Point(1307, 660)
+        Me.lblPageInfo.Name = "lblPageInfo"
+        Me.lblPageInfo.Size = New System.Drawing.Size(29, 35)
+        Me.lblPageInfo.TabIndex = 28
+        Me.lblPageInfo.Text = "1"
+        Me.lblPageInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Cart
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(188, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1348, 721)
+        Me.Controls.Add(Me.lblPageInfo)
         Me.Controls.Add(Me.btnNextPage)
+        Me.Controls.Add(Me.btnPreviousPage)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
@@ -238,9 +358,12 @@ Partial Class Cart
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        Me.Panel3.ResumeLayout(False)
+        CType(Me.dgvCart, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -256,7 +379,16 @@ Partial Class Cart
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents txtTotal As TextBox
+    Friend WithEvents btnClear As Button
+    Friend WithEvents btnCheckout As Button
+    Friend WithEvents dgvCart As DataGridView
+    Friend WithEvents ProductID As DataGridViewTextBoxColumn
+    Friend WithEvents Title As DataGridViewTextBoxColumn
+    Friend WithEvents UnitPrice As DataGridViewTextBoxColumn
+    Friend WithEvents Quantity As DataGridViewTextBoxColumn
+    Friend WithEvents TotalPrice As DataGridViewTextBoxColumn
+    Friend WithEvents RemoveItem As DataGridViewButtonColumn
+    Friend WithEvents btnPreviousPage As Button
+    Friend WithEvents lblPageInfo As Label
 End Class
