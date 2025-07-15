@@ -45,4 +45,17 @@ Public Class DatabaseHelper
             End Using
         End Using
     End Sub
+
+    Public Shared Function ExecuteScalar(query As String, parameters As List(Of OleDbParameter)) As Object
+        Using conn As OleDbConnection = GetConnection()
+            Using cmd As New OleDbCommand(query, conn)
+                If parameters IsNot Nothing Then
+                    cmd.Parameters.AddRange(parameters.ToArray())
+                End If
+                conn.Open()
+                Return cmd.ExecuteScalar()
+            End Using
+        End Using
+    End Function
+
 End Class

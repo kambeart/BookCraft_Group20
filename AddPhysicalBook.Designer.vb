@@ -29,15 +29,15 @@ Partial Class AddPhysicalBook
         Me.txtDesc = New System.Windows.Forms.TextBox()
         Me.txtTitle = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.linkUploadCover = New System.Windows.Forms.LinkLabel()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.picCover = New System.Windows.Forms.PictureBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.numQuantity = New System.Windows.Forms.NumericUpDown()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.numPrice = New System.Windows.Forms.NumericUpDown()
@@ -106,25 +106,25 @@ Partial Class AddPhysicalBook
         Me.Panel1.Size = New System.Drawing.Size(303, 383)
         Me.Panel1.TabIndex = 39
         '
-        'Label3
+        'Label5
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Calibri", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(920, 536)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(88, 40)
-        Me.Label3.TabIndex = 3
-        Me.Label3.Text = "ISBN:"
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Calibri", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(206, 225)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(93, 40)
+        Me.Label5.TabIndex = 48
+        Me.Label5.Text = "Price:"
         '
-        'Label4
+        'Label6
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Calibri", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(867, 582)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(141, 40)
-        Me.Label4.TabIndex = 2
-        Me.Label4.Text = "Genre(s):"
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Calibri", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(153, 271)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(142, 40)
+        Me.Label6.TabIndex = 47
+        Me.Label6.Text = "Quantity:"
         '
         'Label2
         '
@@ -145,6 +145,26 @@ Partial Class AddPhysicalBook
         Me.Label1.Size = New System.Drawing.Size(85, 40)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Title:"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Calibri", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(920, 536)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(88, 40)
+        Me.Label3.TabIndex = 3
+        Me.Label3.Text = "ISBN:"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Calibri", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(867, 582)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(141, 40)
+        Me.Label4.TabIndex = 2
+        Me.Label4.Text = "Genre(s):"
         '
         'linkUploadCover
         '
@@ -175,26 +195,6 @@ Partial Class AddPhysicalBook
         Me.picCover.Size = New System.Drawing.Size(228, 208)
         Me.picCover.TabIndex = 35
         Me.picCover.TabStop = False
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Calibri", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(206, 225)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(93, 40)
-        Me.Label5.TabIndex = 48
-        Me.Label5.Text = "Price:"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Calibri", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(153, 271)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(142, 40)
-        Me.Label6.TabIndex = 47
-        Me.Label6.Text = "Quantity:"
         '
         'numQuantity
         '
@@ -272,4 +272,8 @@ Partial Class AddPhysicalBook
     Friend WithEvents numQuantity As NumericUpDown
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents numPrice As NumericUpDown
+
+    Private Sub AddPhysicalBook_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

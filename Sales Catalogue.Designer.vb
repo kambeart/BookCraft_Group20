@@ -31,13 +31,12 @@ Partial Class Sales_Catalogue
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.btnNextPage = New System.Windows.Forms.Button()
         Me.Button10 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -116,7 +115,6 @@ Partial Class Sales_Catalogue
         '
         'Panel1
         '
-        Me.Panel1.Controls.Add(Me.Button9)
         Me.Panel1.Controls.Add(Me.Button6)
         Me.Panel1.Controls.Add(Me.Button4)
         Me.Panel1.Controls.Add(Me.Button5)
@@ -128,30 +126,6 @@ Partial Class Sales_Catalogue
         Me.Panel1.Size = New System.Drawing.Size(239, 720)
         Me.Panel1.TabIndex = 6
         '
-        'Button9
-        '
-        Me.Button9.BackgroundImage = CType(resources.GetObject("Button9.BackgroundImage"), System.Drawing.Image)
-        Me.Button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button9.ForeColor = System.Drawing.Color.Transparent
-        Me.Button9.Location = New System.Drawing.Point(11, 10)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(83, 72)
-        Me.Button9.TabIndex = 29
-        Me.Button9.UseVisualStyleBackColor = True
-        '
-        'Button6
-        '
-        Me.Button6.BackgroundImage = CType(resources.GetObject("Button6.BackgroundImage"), System.Drawing.Image)
-        Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.ForeColor = System.Drawing.Color.Transparent
-        Me.Button6.Location = New System.Drawing.Point(3, 609)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(86, 78)
-        Me.Button6.TabIndex = 22
-        Me.Button6.UseVisualStyleBackColor = True
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -160,27 +134,35 @@ Partial Class Sales_Catalogue
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(651, 31)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(332, 60)
+        Me.Label1.Size = New System.Drawing.Size(324, 59)
         Me.Label1.TabIndex = 25
         Me.Label1.Text = "Sales Catalogue"
         '
         'Button7
         '
+        Me.Button7.BackColor = System.Drawing.Color.Sienna
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button7.Font = New System.Drawing.Font("Calibri", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button7.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button7.Location = New System.Drawing.Point(307, 624)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(75, 52)
         Me.Button7.TabIndex = 26
         Me.Button7.Text = "+"
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.Button7.UseVisualStyleBackColor = False
         '
         'Button8
         '
+        Me.Button8.BackColor = System.Drawing.Color.Sienna
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button8.Font = New System.Drawing.Font("Calibri", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button8.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button8.Location = New System.Drawing.Point(388, 624)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(75, 52)
         Me.Button8.TabIndex = 27
-        Me.Button8.Text = "-"
-        Me.Button8.UseVisualStyleBackColor = True
+        Me.Button8.Text = " -"
+        Me.Button8.UseVisualStyleBackColor = False
         '
         'btnNextPage
         '
@@ -207,6 +189,18 @@ Partial Class Sales_Catalogue
         Me.Button10.TabIndex = 36
         Me.Button10.Text = "<"
         Me.Button10.UseVisualStyleBackColor = False
+        '
+        'Button6
+        '
+        Me.Button6.BackgroundImage = CType(resources.GetObject("Button6.BackgroundImage"), System.Drawing.Image)
+        Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button6.ForeColor = System.Drawing.Color.Transparent
+        Me.Button6.Location = New System.Drawing.Point(3, 609)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(86, 78)
+        Me.Button6.TabIndex = 22
+        Me.Button6.UseVisualStyleBackColor = True
         '
         'Sales_Catalogue
         '
@@ -243,6 +237,5 @@ Partial Class Sales_Catalogue
     Friend WithEvents Button7 As Button
     Friend WithEvents Button8 As Button
     Friend WithEvents btnNextPage As Button
-    Friend WithEvents Button9 As Button
     Friend WithEvents Button10 As Button
 End Class
