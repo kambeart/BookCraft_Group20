@@ -1,4 +1,5 @@
 ﻿Imports System.Data.OleDb
+Imports System.Diagnostics.Eventing.Reader
 
 Public Class Form1
     Private Sub Button1_Click(sender As Object, e As EventArgs)
@@ -23,8 +24,8 @@ Public Class Form1
         ' 3. Prepare connection
         Dim conn As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Yiwen\source\repos\BookCraft_Group20\bin\Debug\BookCraft_Group20_Database.accdb")
 
-        ' 4. Prepare SQL (use parameters for security)
-        Dim sql As String = "SELECT COUNT(*) FROM UserInfo WHERE Username = ? AND Password = ?"
+        ' 4. Prepare SQL (select all needed fields)
+        Dim sql As String = "SELECT ID, Username FROM UserInfo WHERE Username = ? AND Password = ?"
         Dim cmd As New OleDbCommand(sql, conn)
         cmd.Parameters.AddWithValue("?", username)
         cmd.Parameters.AddWithValue("?", password)
@@ -32,21 +33,22 @@ Public Class Form1
         ' 5. Execute the query
         Try
             conn.Open()
-            Dim userFound As Integer = CInt(cmd.ExecuteScalar())
-            conn.Close()
+            Dim reader As OleDbDataReader = cmd.ExecuteReader()
 
-            If userFound > 0 Then
+            If reader.HasRows Then
+                reader.Read()
                 MessageBox.Show("Login successful!")
+                Session.CurrentUserID = reader("ID")
                 Me.Hide()
                 MarketPlace.Show()
-                ' TODO: Open the main form or dashboard
-                ' e.g., MainForm.Show() : Me.Hide()
             Else
                 MessageBox.Show("Invalid username or password.")
             End If
 
+            reader.Close()
         Catch ex As Exception
             MessageBox.Show("Login error: " & ex.Message)
+        Finally
             If conn.State = ConnectionState.Open Then conn.Close()
         End Try
     End Sub
@@ -54,5 +56,9 @@ Public Class Form1
     Private Sub btnSignUp_Click(sender As Object, e As EventArgs) Handles btnSignUp.Click
         Me.Hide()
         SignUp.Show()
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

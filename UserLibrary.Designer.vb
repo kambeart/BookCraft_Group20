@@ -24,6 +24,7 @@ Partial Class UserLibrary
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(UserLibrary))
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.flpLibrary = New System.Windows.Forms.FlowLayoutPanel()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -37,12 +38,22 @@ Partial Class UserLibrary
         Me.PictureBox2.TabIndex = 11
         Me.PictureBox2.TabStop = False
         '
+        'flpLibrary
+        '
+        Me.flpLibrary.AutoScroll = True
+        Me.flpLibrary.AutoScrollMargin = New System.Drawing.Size(2, 2)
+        Me.flpLibrary.Location = New System.Drawing.Point(46, 147)
+        Me.flpLibrary.Name = "flpLibrary"
+        Me.flpLibrary.Size = New System.Drawing.Size(991, 379)
+        Me.flpLibrary.TabIndex = 41
+        '
         'UserLibrary
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(252, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(182, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1348, 721)
+        Me.ClientSize = New System.Drawing.Size(1073, 547)
+        Me.Controls.Add(Me.flpLibrary)
         Me.Controls.Add(Me.PictureBox2)
         Me.Name = "UserLibrary"
         Me.Text = "UserLibrary"
@@ -52,4 +63,5 @@ Partial Class UserLibrary
     End Sub
 
     Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents flpLibrary As FlowLayoutPanel
 End Class

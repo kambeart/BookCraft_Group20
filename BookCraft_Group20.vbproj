@@ -48,11 +48,14 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -76,7 +79,9 @@
     <Compile Include="AddPhysicalBook.Designer.vb">
       <DependentUpon>AddPhysicalBook.vb</DependentUpon>
     </Compile>
-    <Compile Include="AddPhysicalBook.vb" />
+    <Compile Include="AddPhysicalBook.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="BookCraft_DataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -107,13 +112,25 @@
     <Compile Include="EwalletPayment.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MarketPlace.Designer.vb">
       <DependentUpon>MarketPlace.vb</DependentUpon>
     </Compile>
     <Compile Include="MarketPlace.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Module1.vb" />
+    <Compile Include="SellerStatistics.Designer.vb">
+      <DependentUpon>SellerStatistics.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SellerStatistics.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Session.vb" />
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -225,6 +242,9 @@
     <EmbeddedResource Include="EwalletPayment.resx">
       <DependentUpon>EwalletPayment.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Log In.resx">
       <DependentUpon>Log In.vb</DependentUpon>
     </EmbeddedResource>
@@ -254,6 +274,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Sales Catalogue.resx">
       <DependentUpon>Sales Catalogue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SellerStatistics.resx">
+      <DependentUpon>SellerStatistics.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SignUp.resx">
       <DependentUpon>SignUp.vb</DependentUpon>
@@ -330,6 +353,11 @@
     <Content Include="My Project\Resources\x exit icon resize.jpg" />
     <Content Include="My Project\Resources\x_icon_150997 resize.jpg" />
     <Content Include="My Project\Resources\x_icon_150997 resize1.jpg" />
+    <Content Include="Resources\DefaultCover.jpg" />
+    <None Include="Resources\Shopping Cart.jpg" />
+    <None Include="Resources\ebookicon2.png" />
+    <None Include="Resources\usericon1.png" />
+    <None Include="Resources\ebookicon1.png" />
     <None Include="Resources\usericon.png" />
     <None Include="Resources\ebookicon.png" />
     <None Include="Resources\bookicon.png" />

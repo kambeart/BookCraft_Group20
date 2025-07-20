@@ -143,6 +143,26 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property ebookicon1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ebookicon1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property ebookicon2() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ebookicon2", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property pfp_Icon() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("pfp Icon", resourceCulture)
@@ -153,9 +173,29 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property Shopping_Cart() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Shopping Cart", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property usericon() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("usericon", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property usericon1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("usericon1", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

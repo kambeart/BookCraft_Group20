@@ -87,8 +87,12 @@ Public Class SignUp
         End If
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
         Me.Hide（）
         Form1.Show（）
+    End Sub
+
+    Private Sub SignUp_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

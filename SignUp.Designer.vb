@@ -42,9 +42,9 @@ Partial Class SignUp
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnBack = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -253,16 +253,6 @@ Partial Class SignUp
         Me.TextBox1.Text = "Craft Your Account!"
         Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(143, 125)
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
-        '
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.Sienna
@@ -276,17 +266,27 @@ Partial Class SignUp
         Me.Button1.Text = "Sign Up"
         Me.Button1.UseVisualStyleBackColor = False
         '
-        'Button2
+        'btnBack
         '
-        Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
-        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.ForeColor = System.Drawing.Color.Transparent
-        Me.Button2.Location = New System.Drawing.Point(28, 622)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(86, 78)
-        Me.Button2.TabIndex = 21
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnBack.BackgroundImage = CType(resources.GetObject("btnBack.BackgroundImage"), System.Drawing.Image)
+        Me.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBack.ForeColor = System.Drawing.Color.Transparent
+        Me.btnBack.Location = New System.Drawing.Point(28, 622)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.Size = New System.Drawing.Size(86, 78)
+        Me.btnBack.TabIndex = 21
+        Me.btnBack.UseVisualStyleBackColor = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(143, 125)
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
         '
         'SignUp
         '
@@ -294,11 +294,12 @@ Partial Class SignUp
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(188, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1348, 721)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "SignUp"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form2"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
@@ -330,5 +331,5 @@ Partial Class SignUp
     Friend WithEvents txtUsername As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnBack As Button
 End Class
