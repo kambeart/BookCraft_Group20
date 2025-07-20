@@ -41,6 +41,7 @@ Partial Class AddPhysicalBook
         Me.numQuantity = New System.Windows.Forms.NumericUpDown()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.numPrice = New System.Windows.Forms.NumericUpDown()
+        Me.btnEbook = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.picCover, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.numQuantity, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -64,7 +65,7 @@ Partial Class AddPhysicalBook
         '
         Me.cboGenre.Font = New System.Drawing.Font("Calibri", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboGenre.FormattingEnabled = True
-        Me.cboGenre.Items.AddRange(New Object() {"Crime", "Detective", "Romance", "Fantasy", "Sci-Fi", "Action", "Adventure", "Mystery", "Horror", "Comedy", "Literary prose", "Poetry", "Drama", "Historical", "Children", "Philosophical/Religious", "Graphic novel", "Textbook", "Report", "Other"})
+        Me.cboGenre.Items.AddRange(New Object() {"General", "Crime", "Detective", "Romance", "Fantasy", "Sci-Fi", "Action", "Adventure", "Mystery", "Horror", "Comedy", "Literary prose", "Poetry", "Drama", "Historical", "Children", "Philosophical/Religious", "Graphic novel", "Textbook", "Report", "Other"})
         Me.cboGenre.Location = New System.Drawing.Point(1017, 580)
         Me.cboGenre.Name = "cboGenre"
         Me.cboGenre.Size = New System.Drawing.Size(163, 48)
@@ -222,12 +223,23 @@ Partial Class AddPhysicalBook
         Me.numPrice.Size = New System.Drawing.Size(163, 44)
         Me.numPrice.TabIndex = 50
         '
+        'btnEbook
+        '
+        Me.btnEbook.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEbook.Location = New System.Drawing.Point(174, 31)
+        Me.btnEbook.Name = "btnEbook"
+        Me.btnEbook.Size = New System.Drawing.Size(147, 78)
+        Me.btnEbook.TabIndex = 51
+        Me.btnEbook.Text = "Ebook/Physical"
+        Me.btnEbook.UseVisualStyleBackColor = True
+        '
         'AddPhysicalBook
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(188, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1348, 721)
+        Me.Controls.Add(Me.btnEbook)
         Me.Controls.Add(Me.numPrice)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.numQuantity)
@@ -243,6 +255,7 @@ Partial Class AddPhysicalBook
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.picCover)
         Me.Name = "AddPhysicalBook"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "AddPhysicalBook"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
@@ -276,4 +289,6 @@ Partial Class AddPhysicalBook
     Private Sub AddPhysicalBook_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Friend WithEvents btnEbook As Button
 End Class

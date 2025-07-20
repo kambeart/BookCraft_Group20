@@ -23,40 +23,40 @@ Partial Class PhysicalOrEbook
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PhysicalOrEbook))
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnPhysical = New System.Windows.Forms.Button()
+        Me.btnEbook = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.btnBackToMarketPlace = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Button1
+        'btnPhysical
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button1.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(93, 259)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(171, 69)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Physical Book"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnPhysical.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnPhysical.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnPhysical.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnPhysical.Location = New System.Drawing.Point(93, 259)
+        Me.btnPhysical.Name = "btnPhysical"
+        Me.btnPhysical.Size = New System.Drawing.Size(171, 69)
+        Me.btnPhysical.TabIndex = 0
+        Me.btnPhysical.Text = "Physical Book"
+        Me.btnPhysical.UseVisualStyleBackColor = False
         '
-        'Button2
+        'btnEbook
         '
-        Me.Button2.BackColor = System.Drawing.Color.LavenderBlush
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button2.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(382, 259)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(171, 69)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Ebook"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btnEbook.BackColor = System.Drawing.Color.LavenderBlush
+        Me.btnEbook.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnEbook.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEbook.Location = New System.Drawing.Point(382, 259)
+        Me.btnEbook.Name = "btnEbook"
+        Me.btnEbook.Size = New System.Drawing.Size(171, 69)
+        Me.btnEbook.TabIndex = 1
+        Me.btnEbook.Text = "Ebook"
+        Me.btnEbook.UseVisualStyleBackColor = False
         '
         'PictureBox1
         '
@@ -83,24 +83,24 @@ Partial Class PhysicalOrEbook
         Me.Panel1.BackColor = System.Drawing.Color.Bisque
         Me.Panel1.Controls.Add(Me.PictureBox2)
         Me.Panel1.Controls.Add(Me.PictureBox1)
-        Me.Panel1.Controls.Add(Me.Button2)
-        Me.Panel1.Controls.Add(Me.Button1)
+        Me.Panel1.Controls.Add(Me.btnEbook)
+        Me.Panel1.Controls.Add(Me.btnPhysical)
         Me.Panel1.Location = New System.Drawing.Point(71, 75)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(653, 336)
         Me.Panel1.TabIndex = 6
         '
-        'Button3
+        'btnBackToMarketPlace
         '
-        Me.Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), System.Drawing.Image)
-        Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.ForeColor = System.Drawing.Color.Transparent
-        Me.Button3.Location = New System.Drawing.Point(12, 12)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(74, 57)
-        Me.Button3.TabIndex = 35
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnBackToMarketPlace.BackgroundImage = CType(resources.GetObject("btnBackToMarketPlace.BackgroundImage"), System.Drawing.Image)
+        Me.btnBackToMarketPlace.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnBackToMarketPlace.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBackToMarketPlace.ForeColor = System.Drawing.Color.Transparent
+        Me.btnBackToMarketPlace.Location = New System.Drawing.Point(12, 12)
+        Me.btnBackToMarketPlace.Name = "btnBackToMarketPlace"
+        Me.btnBackToMarketPlace.Size = New System.Drawing.Size(74, 57)
+        Me.btnBackToMarketPlace.TabIndex = 35
+        Me.btnBackToMarketPlace.UseVisualStyleBackColor = True
         '
         'PhysicalOrEbook
         '
@@ -108,9 +108,10 @@ Partial Class PhysicalOrEbook
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(252, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(182, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.btnBackToMarketPlace)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "PhysicalOrEbook"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "PhysicalOrEbook"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -119,10 +120,10 @@ Partial Class PhysicalOrEbook
 
     End Sub
 
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnPhysical As Button
+    Friend WithEvents btnEbook As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Button3 As Button
+    Friend WithEvents btnBackToMarketPlace As Button
 End Class

@@ -22,457 +22,55 @@ Partial Class UserProfile
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(UserProfile))
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.linkProfile = New System.Windows.Forms.LinkLabel()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.LinkLabel4 = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
-        Me.Panel7 = New System.Windows.Forms.Panel()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Panel8 = New System.Windows.Forms.Panel()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Panel9 = New System.Windows.Forms.Panel()
-        Me.RadioButton_Female = New System.Windows.Forms.RadioButton()
-        Me.RadioButton_Male = New System.Windows.Forms.RadioButton()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.picProfile = New System.Windows.Forms.PictureBox()
-        Me.Label7 = New System.Windows.Forms.Label()
+        Me.btnStatistic = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.btnCatelogue = New System.Windows.Forms.Button()
+        Me.btnLibrary = New System.Windows.Forms.Button()
+        Me.btnProfile2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.btnProfile = New System.Windows.Forms.Button()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.btnEbook = New System.Windows.Forms.Button()
+        Me.btnMarket = New System.Windows.Forms.Button()
+        Me.MainPanel = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
-        Me.Panel2.SuspendLayout()
-        Me.Panel3.SuspendLayout()
-        Me.Panel7.SuspendLayout()
-        Me.Panel5.SuspendLayout()
-        Me.Panel8.SuspendLayout()
-        Me.Panel9.SuspendLayout()
-        Me.Panel6.SuspendLayout()
-        Me.Panel4.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picProfile, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel1.SuspendLayout()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
         '
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(103, Byte), Integer), CType(CType(72, Byte), Integer))
+        Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Panel1.Controls.Add(Me.btnStatistic)
         Me.Panel1.Controls.Add(Me.Label8)
         Me.Panel1.Controls.Add(Me.Label7)
-        Me.Panel1.Controls.Add(Me.Button4)
-        Me.Panel1.Controls.Add(Me.Button5)
-        Me.Panel1.Controls.Add(Me.Button3)
-        Me.Panel1.Controls.Add(Me.Button2)
+        Me.Panel1.Controls.Add(Me.btnCatelogue)
+        Me.Panel1.Controls.Add(Me.btnLibrary)
+        Me.Panel1.Controls.Add(Me.btnProfile2)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Location = New System.Drawing.Point(0, 1)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(239, 720)
         Me.Panel1.TabIndex = 0
         '
-        'Button4
-        '
-        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(103, Byte), Integer), CType(CType(72, Byte), Integer))
-        Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.ForeColor = System.Drawing.Color.Black
-        Me.Button4.Location = New System.Drawing.Point(1, 340)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(238, 65)
-        Me.Button4.TabIndex = 15
-        Me.Button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button4.UseVisualStyleBackColor = False
-        '
-        'Button5
-        '
-        Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(103, Byte), Integer), CType(CType(72, Byte), Integer))
-        Me.Button5.FlatAppearance.BorderSize = 0
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Font = New System.Drawing.Font("Calibri", 16.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.ForeColor = System.Drawing.Color.White
-        Me.Button5.Location = New System.Drawing.Point(0, 275)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(239, 65)
-        Me.Button5.TabIndex = 14
-        Me.Button5.Text = "My Statistics"
-        Me.Button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button5.UseVisualStyleBackColor = False
-        '
-        'Button3
-        '
-        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(103, Byte), Integer), CType(CType(72, Byte), Integer))
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Calibri", 16.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Location = New System.Drawing.Point(0, 212)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(239, 65)
-        Me.Button3.TabIndex = 13
-        Me.Button3.Text = "My Catalogue"
-        Me.Button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button3.UseVisualStyleBackColor = False
-        '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(103, Byte), Integer), CType(CType(72, Byte), Integer))
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Calibri", 16.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(1, 147)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(238, 65)
-        Me.Button2.TabIndex = 12
-        Me.Button2.Text = "My Library"
-        Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.UseVisualStyleBackColor = False
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.ForeColor = System.Drawing.Color.Black
-        Me.Button1.Location = New System.Drawing.Point(1, 0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(238, 151)
-        Me.Button1.TabIndex = 11
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'Panel2
-        '
-        Me.Panel2.Controls.Add(Me.linkProfile)
-        Me.Panel2.Controls.Add(Me.PictureBox2)
-        Me.Panel2.Controls.Add(Me.TextBox3)
-        Me.Panel2.Controls.Add(Me.TextBox2)
-        Me.Panel2.Controls.Add(Me.TextBox1)
-        Me.Panel2.Controls.Add(Me.picProfile)
-        Me.Panel2.Location = New System.Drawing.Point(245, 12)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1091, 244)
-        Me.Panel2.TabIndex = 1
-        '
-        'linkProfile
-        '
-        Me.linkProfile.AutoSize = True
-        Me.linkProfile.Location = New System.Drawing.Point(93, 225)
-        Me.linkProfile.Name = "linkProfile"
-        Me.linkProfile.Size = New System.Drawing.Size(93, 16)
-        Me.linkProfile.TabIndex = 25
-        Me.linkProfile.TabStop = True
-        Me.linkProfile.Text = "Upload Profile"
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Font = New System.Drawing.Font("Calibri", 7.8!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(291, 136)
-        Me.TextBox3.Multiline = True
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.ReadOnly = True
-        Me.TextBox3.Size = New System.Drawing.Size(559, 73)
-        Me.TextBox3.TabIndex = 9
-        '
-        'TextBox2
-        '
-        Me.TextBox2.BackColor = System.Drawing.Color.Gainsboro
-        Me.TextBox2.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(291, 100)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.ReadOnly = True
-        Me.TextBox2.Size = New System.Drawing.Size(559, 32)
-        Me.TextBox2.TabIndex = 8
-        '
-        'TextBox1
-        '
-        Me.TextBox1.BackColor = System.Drawing.Color.Gainsboro
-        Me.TextBox1.Font = New System.Drawing.Font("Calibri", 22.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(291, 44)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(559, 53)
-        Me.TextBox1.TabIndex = 7
-        '
-        'Panel3
-        '
-        Me.Panel3.Controls.Add(Me.LinkLabel4)
-        Me.Panel3.Controls.Add(Me.LinkLabel3)
-        Me.Panel3.Controls.Add(Me.LinkLabel2)
-        Me.Panel3.Controls.Add(Me.LinkLabel1)
-        Me.Panel3.Controls.Add(Me.Panel7)
-        Me.Panel3.Controls.Add(Me.Panel5)
-        Me.Panel3.Controls.Add(Me.Panel8)
-        Me.Panel3.Controls.Add(Me.Panel9)
-        Me.Panel3.Controls.Add(Me.Panel6)
-        Me.Panel3.Controls.Add(Me.Panel4)
-        Me.Panel3.Location = New System.Drawing.Point(245, 276)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1044, 341)
-        Me.Panel3.TabIndex = 10
-        '
-        'LinkLabel4
-        '
-        Me.LinkLabel4.AutoSize = True
-        Me.LinkLabel4.Location = New System.Drawing.Point(936, 290)
-        Me.LinkLabel4.Name = "LinkLabel4"
-        Me.LinkLabel4.Size = New System.Drawing.Size(93, 16)
-        Me.LinkLabel4.TabIndex = 31
-        Me.LinkLabel4.TabStop = True
-        Me.LinkLabel4.Text = "Upload Profile"
-        '
-        'LinkLabel3
-        '
-        Me.LinkLabel3.AutoSize = True
-        Me.LinkLabel3.Location = New System.Drawing.Point(936, 139)
-        Me.LinkLabel3.Name = "LinkLabel3"
-        Me.LinkLabel3.Size = New System.Drawing.Size(93, 16)
-        Me.LinkLabel3.TabIndex = 28
-        Me.LinkLabel3.TabStop = True
-        Me.LinkLabel3.Text = "Upload Profile"
-        '
-        'LinkLabel2
-        '
-        Me.LinkLabel2.AutoSize = True
-        Me.LinkLabel2.Location = New System.Drawing.Point(936, 89)
-        Me.LinkLabel2.Name = "LinkLabel2"
-        Me.LinkLabel2.Size = New System.Drawing.Size(93, 16)
-        Me.LinkLabel2.TabIndex = 27
-        Me.LinkLabel2.TabStop = True
-        Me.LinkLabel2.Text = "Upload Profile"
-        '
-        'LinkLabel1
-        '
-        Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Location = New System.Drawing.Point(936, 36)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(93, 16)
-        Me.LinkLabel1.TabIndex = 26
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "Upload Profile"
-        '
-        'Panel7
-        '
-        Me.Panel7.BackColor = System.Drawing.Color.White
-        Me.Panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel7.Controls.Add(Me.Label6)
-        Me.Panel7.Location = New System.Drawing.Point(82, 274)
-        Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(834, 53)
-        Me.Panel7.TabIndex = 4
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(6, 6)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(130, 38)
-        Me.Label6.TabIndex = 9
-        Me.Label6.Text = "Address :"
-        '
-        'Panel5
-        '
-        Me.Panel5.BackColor = System.Drawing.Color.White
-        Me.Panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel5.Controls.Add(Me.Label3)
-        Me.Panel5.Location = New System.Drawing.Point(82, 115)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(834, 53)
-        Me.Panel5.TabIndex = 1
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(6, 6)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(220, 38)
-        Me.Label3.TabIndex = 6
-        Me.Label3.Text = "Phone Number :"
-        '
-        'Panel8
-        '
-        Me.Panel8.BackColor = System.Drawing.Color.White
-        Me.Panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel8.Controls.Add(Me.Label5)
-        Me.Panel8.Location = New System.Drawing.Point(82, 221)
-        Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(834, 53)
-        Me.Panel8.TabIndex = 5
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(6, 7)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(193, 38)
-        Me.Label5.TabIndex = 8
-        Me.Label5.Text = "Date Of Birth :"
-        '
-        'Panel9
-        '
-        Me.Panel9.BackColor = System.Drawing.Color.White
-        Me.Panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel9.Controls.Add(Me.RadioButton_Female)
-        Me.Panel9.Controls.Add(Me.RadioButton_Male)
-        Me.Panel9.Controls.Add(Me.Label4)
-        Me.Panel9.Location = New System.Drawing.Point(82, 168)
-        Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(834, 53)
-        Me.Panel9.TabIndex = 3
-        '
-        'RadioButton_Female
-        '
-        Me.RadioButton_Female.AutoSize = True
-        Me.RadioButton_Female.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton_Female.ForeColor = System.Drawing.Color.Sienna
-        Me.RadioButton_Female.Location = New System.Drawing.Point(232, 6)
-        Me.RadioButton_Female.Name = "RadioButton_Female"
-        Me.RadioButton_Female.Size = New System.Drawing.Size(127, 42)
-        Me.RadioButton_Female.TabIndex = 9
-        Me.RadioButton_Female.TabStop = True
-        Me.RadioButton_Female.Text = "Female"
-        Me.RadioButton_Female.UseVisualStyleBackColor = True
-        '
-        'RadioButton_Male
-        '
-        Me.RadioButton_Male.AutoSize = True
-        Me.RadioButton_Male.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton_Male.ForeColor = System.Drawing.Color.Sienna
-        Me.RadioButton_Male.Location = New System.Drawing.Point(127, 5)
-        Me.RadioButton_Male.Name = "RadioButton_Male"
-        Me.RadioButton_Male.Size = New System.Drawing.Size(99, 42)
-        Me.RadioButton_Male.TabIndex = 8
-        Me.RadioButton_Male.TabStop = True
-        Me.RadioButton_Male.Text = "Male"
-        Me.RadioButton_Male.UseVisualStyleBackColor = True
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(6, 6)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(122, 38)
-        Me.Label4.TabIndex = 7
-        Me.Label4.Text = "Gender :"
-        '
-        'Panel6
-        '
-        Me.Panel6.BackColor = System.Drawing.Color.White
-        Me.Panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel6.Controls.Add(Me.Label2)
-        Me.Panel6.Location = New System.Drawing.Point(82, 62)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(834, 53)
-        Me.Panel6.TabIndex = 2
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(6, 4)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(97, 38)
-        Me.Label2.TabIndex = 5
-        Me.Label2.Text = "Email :"
-        '
-        'Panel4
-        '
-        Me.Panel4.BackColor = System.Drawing.Color.White
-        Me.Panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel4.Controls.Add(Me.Label1)
-        Me.Panel4.Location = New System.Drawing.Point(82, 9)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(834, 53)
-        Me.Panel4.TabIndex = 0
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(6, 4)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(105, 38)
-        Me.Label1.TabIndex = 4
-        Me.Label1.Text = "Name :"
-        '
-        'OpenFileDialog1
-        '
-        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackgroundImage = CType(resources.GetObject("PictureBox2.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox2.Location = New System.Drawing.Point(856, 19)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(232, 206)
-        Me.PictureBox2.TabIndex = 10
-        Me.PictureBox2.TabStop = False
-        '
-        'picProfile
-        '
-        Me.picProfile.BackgroundImage = CType(resources.GetObject("picProfile.BackgroundImage"), System.Drawing.Image)
-        Me.picProfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.picProfile.Location = New System.Drawing.Point(26, 19)
-        Me.picProfile.Name = "picProfile"
-        Me.picProfile.Size = New System.Drawing.Size(235, 206)
-        Me.picProfile.TabIndex = 7
-        Me.picProfile.TabStop = False
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label7.Font = New System.Drawing.Font("Segoe UI", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(12, 21)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(113, 54)
-        Me.Label7.TabIndex = 5
-        Me.Label7.Text = "User "
+        'btnStatistic
+        '
+        Me.btnStatistic.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(103, Byte), Integer), CType(CType(72, Byte), Integer))
+        Me.btnStatistic.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnStatistic.FlatAppearance.BorderSize = 0
+        Me.btnStatistic.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnStatistic.Font = New System.Drawing.Font("Calibri", 16.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnStatistic.ForeColor = System.Drawing.Color.White
+        Me.btnStatistic.Location = New System.Drawing.Point(0, 346)
+        Me.btnStatistic.Name = "btnStatistic"
+        Me.btnStatistic.Size = New System.Drawing.Size(239, 65)
+        Me.btnStatistic.TabIndex = 17
+        Me.btnStatistic.Text = "My Statistic"
+        Me.btnStatistic.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnStatistic.UseVisualStyleBackColor = False
         '
         'Label8
         '
@@ -486,6 +84,83 @@ Partial Class UserProfile
         Me.Label8.TabIndex = 16
         Me.Label8.Text = "Profile"
         '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label7.Font = New System.Drawing.Font("Segoe UI", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.White
+        Me.Label7.Location = New System.Drawing.Point(12, 21)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(113, 54)
+        Me.Label7.TabIndex = 5
+        Me.Label7.Text = "User "
+        '
+        'btnCatelogue
+        '
+        Me.btnCatelogue.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(103, Byte), Integer), CType(CType(72, Byte), Integer))
+        Me.btnCatelogue.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnCatelogue.FlatAppearance.BorderSize = 0
+        Me.btnCatelogue.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCatelogue.Font = New System.Drawing.Font("Calibri", 16.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCatelogue.ForeColor = System.Drawing.Color.White
+        Me.btnCatelogue.Location = New System.Drawing.Point(0, 281)
+        Me.btnCatelogue.Name = "btnCatelogue"
+        Me.btnCatelogue.Size = New System.Drawing.Size(239, 65)
+        Me.btnCatelogue.TabIndex = 14
+        Me.btnCatelogue.Text = "My Catalogue"
+        Me.btnCatelogue.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnCatelogue.UseVisualStyleBackColor = False
+        '
+        'btnLibrary
+        '
+        Me.btnLibrary.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(103, Byte), Integer), CType(CType(72, Byte), Integer))
+        Me.btnLibrary.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnLibrary.FlatAppearance.BorderSize = 0
+        Me.btnLibrary.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnLibrary.Font = New System.Drawing.Font("Calibri", 16.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLibrary.ForeColor = System.Drawing.Color.White
+        Me.btnLibrary.Location = New System.Drawing.Point(0, 216)
+        Me.btnLibrary.Name = "btnLibrary"
+        Me.btnLibrary.Size = New System.Drawing.Size(239, 65)
+        Me.btnLibrary.TabIndex = 13
+        Me.btnLibrary.Text = "My Library"
+        Me.btnLibrary.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnLibrary.UseVisualStyleBackColor = False
+        '
+        'btnProfile2
+        '
+        Me.btnProfile2.BackColor = System.Drawing.Color.FromArgb(CType(CType(132, Byte), Integer), CType(CType(103, Byte), Integer), CType(CType(72, Byte), Integer))
+        Me.btnProfile2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnProfile2.FlatAppearance.BorderSize = 0
+        Me.btnProfile2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnProfile2.Font = New System.Drawing.Font("Calibri", 16.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnProfile2.ForeColor = System.Drawing.Color.White
+        Me.btnProfile2.Location = New System.Drawing.Point(0, 151)
+        Me.btnProfile2.Name = "btnProfile2"
+        Me.btnProfile2.Size = New System.Drawing.Size(239, 65)
+        Me.btnProfile2.TabIndex = 12
+        Me.btnProfile2.Text = "Profile"
+        Me.btnProfile2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnProfile2.UseVisualStyleBackColor = False
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(91, Byte), Integer), CType(CType(65, Byte), Integer), CType(CType(45, Byte), Integer))
+        Me.Button1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.ForeColor = System.Drawing.Color.Black
+        Me.Button1.Location = New System.Drawing.Point(0, 0)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(239, 151)
+        Me.Button1.TabIndex = 11
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
         'TableLayoutPanel1
         '
         Me.TableLayoutPanel1.BackColor = System.Drawing.Color.Sienna
@@ -494,49 +169,60 @@ Partial Class UserProfile
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
-        Me.TableLayoutPanel1.Controls.Add(Me.PictureBox6, 2, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.btnProfile, 0, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.PictureBox7, 1, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.btnProfile, 2, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.btnEbook, 1, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.btnMarket, 0, 0)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 612)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 106.0!))
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(1348, 109)
         Me.TableLayoutPanel1.TabIndex = 40
         '
-        'PictureBox6
-        '
-        Me.PictureBox6.BackgroundImage = Global.BookCraft_Group20.My.Resources.Resources.usericon
-        Me.PictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox6.Location = New System.Drawing.Point(902, 6)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(440, 97)
-        Me.PictureBox6.TabIndex = 40
-        Me.PictureBox6.TabStop = False
-        '
         'btnProfile
         '
-        Me.btnProfile.BackgroundImage = Global.BookCraft_Group20.My.Resources.Resources.bookicon
+        Me.btnProfile.BackgroundImage = Global.BookCraft_Group20.My.Resources.Resources.usericon1
         Me.btnProfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btnProfile.FlatAppearance.BorderSize = 0
         Me.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnProfile.Location = New System.Drawing.Point(6, 6)
+        Me.btnProfile.Location = New System.Drawing.Point(902, 6)
         Me.btnProfile.Name = "btnProfile"
         Me.btnProfile.Size = New System.Drawing.Size(439, 97)
-        Me.btnProfile.TabIndex = 40
+        Me.btnProfile.TabIndex = 42
         Me.btnProfile.UseVisualStyleBackColor = True
         '
-        'PictureBox7
+        'btnEbook
         '
-        Me.PictureBox7.BackgroundImage = Global.BookCraft_Group20.My.Resources.Resources.ebookicon
-        Me.PictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox7.Location = New System.Drawing.Point(454, 6)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(439, 97)
-        Me.PictureBox7.TabIndex = 41
-        Me.PictureBox7.TabStop = False
+        Me.btnEbook.BackgroundImage = Global.BookCraft_Group20.My.Resources.Resources.ebookicon1
+        Me.btnEbook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnEbook.FlatAppearance.BorderSize = 0
+        Me.btnEbook.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEbook.Location = New System.Drawing.Point(454, 6)
+        Me.btnEbook.Name = "btnEbook"
+        Me.btnEbook.Size = New System.Drawing.Size(439, 97)
+        Me.btnEbook.TabIndex = 41
+        Me.btnEbook.UseVisualStyleBackColor = True
+        '
+        'btnMarket
+        '
+        Me.btnMarket.BackgroundImage = Global.BookCraft_Group20.My.Resources.Resources.bookicon
+        Me.btnMarket.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnMarket.FlatAppearance.BorderSize = 0
+        Me.btnMarket.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMarket.Location = New System.Drawing.Point(6, 6)
+        Me.btnMarket.Name = "btnMarket"
+        Me.btnMarket.Size = New System.Drawing.Size(439, 97)
+        Me.btnMarket.TabIndex = 40
+        Me.btnMarket.UseVisualStyleBackColor = True
+        '
+        'MainPanel
+        '
+        Me.MainPanel.Location = New System.Drawing.Point(245, 1)
+        Me.MainPanel.Name = "MainPanel"
+        Me.MainPanel.Size = New System.Drawing.Size(1094, 611)
+        Me.MainPanel.TabIndex = 18
         '
         'UserProfile
         '
@@ -545,75 +231,30 @@ Partial Class UserProfile
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(227, Byte), Integer), CType(CType(188, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1348, 721)
         Me.Controls.Add(Me.TableLayoutPanel1)
-        Me.Controls.Add(Me.Panel3)
-        Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.MainPanel)
         Me.Name = "UserProfile"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "UserProfile"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
-        Me.Panel3.ResumeLayout(False)
-        Me.Panel3.PerformLayout()
-        Me.Panel7.ResumeLayout(False)
-        Me.Panel7.PerformLayout()
-        Me.Panel5.ResumeLayout(False)
-        Me.Panel5.PerformLayout()
-        Me.Panel8.ResumeLayout(False)
-        Me.Panel8.PerformLayout()
-        Me.Panel9.ResumeLayout(False)
-        Me.Panel9.PerformLayout()
-        Me.Panel6.ResumeLayout(False)
-        Me.Panel6.PerformLayout()
-        Me.Panel4.ResumeLayout(False)
-        Me.Panel4.PerformLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picProfile, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel1.ResumeLayout(False)
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents picProfile As PictureBox
-    Friend WithEvents Panel3 As Panel
-    Friend WithEvents Panel4 As Panel
-    Friend WithEvents Panel7 As Panel
-    Friend WithEvents Panel5 As Panel
-    Friend WithEvents Panel8 As Panel
-    Friend WithEvents Panel9 As Panel
-    Friend WithEvents Panel6 As Panel
     Friend WithEvents Button1 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents linkProfile As LinkLabel
-    Friend WithEvents LinkLabel4 As LinkLabel
-    Friend WithEvents LinkLabel3 As LinkLabel
-    Friend WithEvents LinkLabel2 As LinkLabel
-    Friend WithEvents LinkLabel1 As LinkLabel
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label4 As Label
+    Friend WithEvents btnCatelogue As Button
+    Friend WithEvents btnLibrary As Button
+    Friend WithEvents btnProfile2 As Button
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
-    Friend WithEvents RadioButton_Female As RadioButton
-    Friend WithEvents RadioButton_Male As RadioButton
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
-    Friend WithEvents PictureBox6 As PictureBox
+    Friend WithEvents btnMarket As Button
     Friend WithEvents btnProfile As Button
-    Friend WithEvents PictureBox7 As PictureBox
+    Friend WithEvents btnEbook As Button
+    Friend WithEvents btnStatistic As Button
+    Friend WithEvents MainPanel As Panel
 End Class

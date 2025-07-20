@@ -15,7 +15,5 @@
         Cart.Show()
     End Sub
 
-    Private Sub RadioButton_Ewallet_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton_Ewallet.CheckedChanged
 
-    End Sub
 End Class

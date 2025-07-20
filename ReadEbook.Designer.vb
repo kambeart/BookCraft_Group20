@@ -138,6 +138,7 @@ Partial Class ReadEbook
         Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.Button2)
         Me.Name = "ReadEbook"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ReadEbook"
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
@@ -154,4 +155,8 @@ Partial Class ReadEbook
     Friend WithEvents btnNextPage As Button
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox1 As TextBox
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+
+    End Sub
 End Class

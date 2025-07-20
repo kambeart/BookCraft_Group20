@@ -65,6 +65,7 @@ Partial Class Transaction_Place
         'RadioButton_Ewallet
         '
         Me.RadioButton_Ewallet.AutoSize = True
+        Me.RadioButton_Ewallet.BackColor = System.Drawing.Color.White
         Me.RadioButton_Ewallet.Font = New System.Drawing.Font("Calibri", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton_Ewallet.Location = New System.Drawing.Point(185, 162)
         Me.RadioButton_Ewallet.Name = "RadioButton_Ewallet"
@@ -72,7 +73,7 @@ Partial Class Transaction_Place
         Me.RadioButton_Ewallet.TabIndex = 2
         Me.RadioButton_Ewallet.TabStop = True
         Me.RadioButton_Ewallet.Text = "E-wallet / QR"
-        Me.RadioButton_Ewallet.UseVisualStyleBackColor = True
+        Me.RadioButton_Ewallet.UseVisualStyleBackColor = False
         '
         'PictureBox3
         '
@@ -97,13 +98,14 @@ Partial Class Transaction_Place
         'RadioButton_OnlineBank
         '
         Me.RadioButton_OnlineBank.AutoSize = True
+        Me.RadioButton_OnlineBank.BackColor = System.Drawing.Color.White
         Me.RadioButton_OnlineBank.Font = New System.Drawing.Font("Calibri", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton_OnlineBank.Location = New System.Drawing.Point(185, 316)
         Me.RadioButton_OnlineBank.Name = "RadioButton_OnlineBank"
         Me.RadioButton_OnlineBank.Size = New System.Drawing.Size(207, 39)
         Me.RadioButton_OnlineBank.TabIndex = 3
         Me.RadioButton_OnlineBank.Text = "Online Banking"
-        Me.RadioButton_OnlineBank.UseVisualStyleBackColor = True
+        Me.RadioButton_OnlineBank.UseVisualStyleBackColor = False
         '
         'PictureBox5
         '
@@ -118,6 +120,7 @@ Partial Class Transaction_Place
         'RadioButton_Card
         '
         Me.RadioButton_Card.AutoSize = True
+        Me.RadioButton_Card.BackColor = System.Drawing.Color.White
         Me.RadioButton_Card.Font = New System.Drawing.Font("Calibri", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton_Card.Location = New System.Drawing.Point(185, 468)
         Me.RadioButton_Card.Name = "RadioButton_Card"
@@ -125,7 +128,7 @@ Partial Class Transaction_Place
         Me.RadioButton_Card.TabIndex = 4
         Me.RadioButton_Card.TabStop = True
         Me.RadioButton_Card.Text = "Credit / Debit Card"
-        Me.RadioButton_Card.UseVisualStyleBackColor = True
+        Me.RadioButton_Card.UseVisualStyleBackColor = False
         '
         'Label1
         '
@@ -191,6 +194,7 @@ Partial Class Transaction_Place
         Me.Controls.Add(Me.RadioButton_Ewallet)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "Transaction_Place"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Transaction_Place"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()

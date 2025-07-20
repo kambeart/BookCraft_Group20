@@ -4,7 +4,7 @@
 Public Class DatabaseHelper
     ' Shared connection string (update your path)
     Private Shared ReadOnly ConnString As String =
-        "Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\Yiwen\Documents\BookCraft_Group20_Database.accdb;"
+        "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Yiwen\source\repos\BookCraft_Group20\bin\Debug\BookCraft_Group20_Database.accdb"
 
     ' Method to get a connection
     Public Shared Function GetConnection() As OleDbConnection
@@ -53,9 +53,34 @@ Public Class DatabaseHelper
                     cmd.Parameters.AddRange(parameters.ToArray())
                 End If
                 conn.Open()
-                Return cmd.ExecuteScalar()
+                Dim result = cmd.ExecuteScalar()
+                Return If(result Is DBNull.Value, Nothing, result)
             End Using
         End Using
     End Function
+
+    Public Class DBHelper
+        Private Shared ReadOnly ConnectionString As String =
+            "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Yiwen\source\repos\BookCraft_Group20\bin\Debug\BookCraft_Group20_Database.accdb"
+
+        Public Shared Function ExecuteQuery(
+            query As String,
+            parameters As List(Of OleDbParameter)
+        ) As DataTable
+
+            Dim dt As New DataTable()
+            Using conn As New OleDbConnection(ConnectionString),
+                  cmd As New OleDbCommand(query, conn)
+
+                If parameters IsNot Nothing Then
+                    cmd.Parameters.AddRange(parameters.ToArray())
+                End If
+
+                conn.Open()
+                dt.Load(cmd.ExecuteReader())
+            End Using
+            Return dt
+        End Function
+    End Class
 
 End Class
